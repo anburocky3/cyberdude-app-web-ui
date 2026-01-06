@@ -1,4 +1,5 @@
 import SiteHeader from "@/components/ui/site-header";
+import AboutMentors from "@/components/ui/about-mentor";
 
 export default function Home() {
   return (
@@ -80,6 +81,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* about mentors section */}
+        <AboutMentors />
       </main>
     </div>
   );
