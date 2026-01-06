@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/ui/site-header";
 import SiteSkills from "@/components/ui/site-skills";
+import Testimonial from "@/components/ui/testimonial";
 
 export default function Home() {
   return (
@@ -86,7 +87,10 @@ export default function Home() {
         <SiteSkills/>
 
       
+        {/* testimonial */}
+         <Testimonial />
       </main>
+     
     </div>
   );
 }
