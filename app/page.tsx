@@ -1,4 +1,5 @@
 import SiteHeader from "@/components/ui/site-header";
+import AboutMentors from "@/components/ui/about-mentor";
 import SiteSkills from "@/components/ui/site-skills";
 import Testimonial from "@/components/ui/testimonial";
 
@@ -84,6 +85,8 @@ export default function Home() {
           </div>
         </section>
 
+        {/* about mentors section */}
+        <AboutMentors />
         <SiteSkills/>
 
       
