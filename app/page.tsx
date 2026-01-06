@@ -1,4 +1,5 @@
 import SiteHeader from "@/components/ui/site-header";
+import Testimonial from "@/components/ui/testimonial";
 
 export default function Home() {
   return (
@@ -80,7 +81,11 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* testimonial */}
+         <Testimonial />
       </main>
+     
     </div>
   );
 }
