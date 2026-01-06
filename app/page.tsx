@@ -1,9 +1,11 @@
 import SiteHeader from "@/components/ui/site-header";
+import SiteSkills from "@/components/ui/site-skills";
 
 export default function Home() {
   return (
     <div>
       <SiteHeader />
+
 
       <main className="bg-black mt-20">
         {/* Hero Section */}
@@ -80,6 +82,10 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <SiteSkills/>
+
+      
       </main>
     </div>
   );
