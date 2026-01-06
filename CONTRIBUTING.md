@@ -16,7 +16,7 @@ This guide keeps things simple so you can get started quickly.
 
 ## Fork the Repository
 - [Fork](https://github.com/anburocky3/cyberdude-app-web-ui/fork), You can Fork the **cyberdude-app-web-ui** repository to your repository
-- After Fork the repository sync your chnages in your repository
+- After Fork the repository sync your changes in your repository
 - Go to your system and Clone your forked repository in your local system
 - Go to Terminal 
 `npm install`
