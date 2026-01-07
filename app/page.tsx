@@ -2,6 +2,7 @@ import SiteHeader from "@/components/ui/site-header";
 import AboutMentors from "@/components/ui/about-mentor";
 import SiteSkills from "@/components/ui/site-skills";
 import Testimonial from "@/components/ui/testimonial-section";
+import { FaqSection } from "@/components/ui/faq-section";
 
 export default function Home() {
   return (
@@ -90,6 +91,9 @@ export default function Home() {
 
         {/* testimonial */}
         <Testimonial />
+
+        {/* FAQ section */}
+        <FaqSection />
       </main>
     </div>
   );
