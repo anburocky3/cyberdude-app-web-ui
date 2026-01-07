@@ -2,6 +2,7 @@ import SiteHeader from "@/components/ui/site-header";
 import AboutMentors from "@/components/ui/about-mentor";
 import SiteSkills from "@/components/ui/site-skills";
 import Testimonial from "@/components/ui/testimonial-section";
+import SiteFooter from "@/components/ui/site-footer";
 
 export default function Home() {
   return (
@@ -90,6 +91,9 @@ export default function Home() {
 
         {/* testimonial */}
         <Testimonial />
+          
+        <SiteFooter />
+
       </main>
     </div>
   );
