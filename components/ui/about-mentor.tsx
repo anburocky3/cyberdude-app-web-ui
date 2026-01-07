@@ -1,15 +1,15 @@
 export default function AboutMentor() {
   return (
-    <section className="mentor_section layout_wrapper relative">
-      <div className="layout_container py-10 flex flex-col md:flex-row justify-between items-center gap-5">
+    <section className="relative text-white">
+      <div className="container mx-auto px-5 py-10 flex flex-col md:flex-row justify-between items-center gap-5">
         {/* mentors content */}
         <div className="w-full h-full space-y-5">
           <h3 className="text-md md:text-xl text-mute font-semibold">
             About Our <span className="text-orange">Mentors</span> and
-            <span className="text-orange">Recruiters</span>
+            <span className="text-orange"> Recruiters</span>
           </h3>
           <h1 className="text-3xl md:text-5xl font-bold uppercase">
-            Your way to New <span className="text-orange">Horizons</span>
+            Your way to New <span className="custom-gradient">Horizons</span>
           </h1>
           <p className="text-md text-mute">
             Find mentors who will help your potential, achieve your professional
@@ -41,7 +41,7 @@ export default function AboutMentor() {
         </div>
 
         {/* mentors banner */}
-        <div className="w-full h-full">
+        <div className="w-full sm:w-[75%] h-full sm:h-[60%]">
           <img src="/img/mentor/anbuselvan-tutor.png" alt="Mentor banner" />
         </div>
       </div>
