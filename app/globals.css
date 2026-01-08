@@ -7,15 +7,22 @@
   --color-gray: hsl(0, 0%, 11%);
   --color-light-gray: hsl(0, 0%, 12%);
   --color-mute: hsl(0, 1%, 49%);
+
+  /* custom breakpoint */
+  --breakpoint-xs: 450px;
 }
 
 @layer components {
+  .custom-gradient {
+    @apply bg-linear-to-r from-orange-300 via-amber-400 to-orange-600 bg-clip-text text-transparent;
+  }
+
   .mentor_section {
     @apply flex justify-center items-center;
   }
 
   .content_chips {
-    @apply bg-orange rounded-full px-4 py-1 cursor-default hover:translate-y-[-3px] transition;
+    @apply bg-orange rounded-full px-4 py-1 cursor-default hover:translate-y-0.75 transition;
   }
 
   .container_card {

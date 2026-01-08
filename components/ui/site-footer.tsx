@@ -2,7 +2,7 @@ export default function SiteFooter() {
   return (
     <>
       <section className="text-white bg-stone-900  flex flex-col gap-12 ">
-        <div className="flex flex-col md:flex-row items-start çmd:items-center  gap-32 px-24 mt-12 justify-between ">
+        <div className="flex flex-col md:flex-row items-center  gap-32 px-24 mt-12 ">
           <div className="">
             <h3 className="font-bold text-3xl md:text-xl mb-4">About</h3>
             <ul className="space-y-3">
@@ -96,9 +96,9 @@ export default function SiteFooter() {
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
                   d="m3 21l7.548-7.548M21 3l-7.548 7.548m0 0L8 3H3l7.548 10.452m2.904-2.904L21 21h-5l-5.452-7.548"
                 />
               </svg>
@@ -112,8 +112,8 @@ export default function SiteFooter() {
                 <g
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <rect width="13" height="10" x=".5" y="2" rx="2" />
                   <path d="M5.31 9.32v-4.2a.39.39 0 0 1 .6-.34l3.6 2.1a.4.4 0 0 1 0 .69l-3.6 2.1a.4.4 0 0 1-.6-.35Z" />
@@ -126,23 +126,23 @@ export default function SiteFooter() {
                 viewBox="0 0 48 48"
                 className="hover:text-amber-600"
               >
-                <g fill="none" stroke="currentColor" stroke-width="3">
+                <g fill="none" stroke="currentColor" strokeWidth="3">
                   <path
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                     d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"
                   />
                   <path
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                     d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"
                   />
-                  <path stroke-linecap="round" d="M4.5 31h39m-39-14h39" />
+                  <path strokeLinecap="round" d="M4.5 31h39m-39-14h39" />
                 </g>
               </svg>
             </div>
           </div>
         </div>
 
-        <div className="flex-grow border-t border-gray-400/20"></div>
+        <div className="grow border-t border-gray-400/20"></div>
 
         <div>
           <p className="font-light px-24 mb-20 text-sm ">
