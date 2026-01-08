@@ -5,6 +5,7 @@ import Testimonial from "@/components/ui/testimonial-section";
 import SiteFooter from "@/components/ui/site-footer";
 import WhychooseSection from "@/components/ui/whychoosesection";
 import FaqSection from "@/components/ui/faq-section";
+import WhoIsItFor from "@/components/ui/whoisitfor-section";
 
 export default function Home() {
   return (
@@ -87,8 +88,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* whtchoose cyberdude */}
+        {/* whychoose cyberdude */}
         <WhychooseSection />
+
+        {/* who is it for section */}
+        <WhoIsItFor />
 
         {/* about mentors section */}
         <AboutMentors />
