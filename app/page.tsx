@@ -4,8 +4,7 @@ import SiteSkills from "@/components/ui/site-skills";
 import Testimonial from "@/components/ui/testimonial-section";
 import SiteFooter from "@/components/ui/site-footer";
 import WhychooseSection from "@/components/ui/whychoosesection";
-import SiteFooter from "@/components/ui/site-footer"
-import  FaqSection  from "@/components/ui/faq-section";
+import FaqSection from "@/components/ui/faq-section";
 
 export default function Home() {
   return (
@@ -87,14 +86,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         {/* whtchoose cyberdude */}
-        <WhychooseSection/>
+        <WhychooseSection />
 
         {/* about mentors section */}
         <AboutMentors />
-        
-         {/* site skills */}
+
+        {/* site skills */}
         <SiteSkills />
 
         {/* testimonial */}
@@ -102,9 +101,8 @@ export default function Home() {
 
         {/* FAQ section */}
         <FaqSection />
-          
-        <SiteFooter />
 
+        <SiteFooter />
       </main>
     </div>
   );
