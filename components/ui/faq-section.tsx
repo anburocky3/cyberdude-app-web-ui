@@ -3,7 +3,7 @@
 import { useState } from "react";
 import FAQData from "@/data/faq";
 
-export const FaqSection = () => {
+const FaqSection = () => {
   const [showAnswer, setShowAnswer] = useState<Record<number, boolean>>({});
 
   const toggleAnswer = (index: number) => {
@@ -58,3 +58,5 @@ export const FaqSection = () => {
     </div>
   );
 };
+
+export default FaqSection;
