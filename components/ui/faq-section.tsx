@@ -14,7 +14,7 @@ const FaqSection = () => {
   };
   return (
     <div>
-      <div className="mx-auto mt-8 pb-4 max-w-3xl px-4">
+      <div className="mx-auto mt-8 pb-4 max-w-2xl px-4">
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-white mb-3">
             Frequently Asked Questions
