@@ -1,18 +1,14 @@
 export default function SiteHeader() {
   return (
-    <header className="px-20 py-10 font-inter space-x-10 flex justify-between w-full mx-auto items-center text-center lg:px-12 md:px-8 fixed top-0 left-0 z-50 bg-black ">
+    <header className="container mx-auto flex justify-between px-20 py-10  z-50">
       <div className="w-full max-w-7xl px-10 lg:px-6 sm:px-6 flex lg:justify-start sm:justify-start">
-        <img
-          src="/img/logo.svg"
-          className="w-12 h-8 sm:w-20 sm:h-14 md:w-20 md:h-16 lg:w-20 lg:h-16"
-          alt="CyberDude Logo"
-        />
+        <img src="/img/logo.svg" className="w-32 " alt="CyberDude Logo" />
       </div>
 
       <div className="hidden text-white md:flex text-sm md:text-base lg:text-lg items-center justify-between space-x-6 ">
         {/* <!-- Nav Links --> */}
-        <ul className="flex items-center space-x-12">
-          <li className="flex items-center gap-1">
+        <ul className="flex items-center space-x-12  tracking-wide">
+          <li className="flex items-center gap-1 ">
             <a
               href="#company"
               className="hover:underline hover:decoration-teal-400"
@@ -37,7 +33,7 @@ export default function SiteHeader() {
           <li>
             <a
               href="#learners"
-              className="hover:underline hover:decoration-teal-400"
+              className="hover:underline hover:decoration-teal-400 "
             >
               Learners
             </a>
@@ -56,6 +52,20 @@ export default function SiteHeader() {
               className="hover:underline hover:decoration-teal-400"
             >
               Pricing
+            </a>
+          </li>
+          <li className="">
+            {/* <a
+              href=""
+              className="block w-36 bg-white text-black px-4 py-2 rounded hover:bg-gray-200 font-medium"
+            >
+              Get Started!
+            </a> */}
+            <a
+              href=""
+              className="block w-36  px-4 py-2 rounded bg-linear-to-r from-orange-300  to-orange-500 text-black font-medium hover:from-orange-400 hover:to-orange-500 transition-colors duration-300"
+            >
+              Get Started!
             </a>
           </li>
         </ul>{" "}

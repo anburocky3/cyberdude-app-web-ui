@@ -10,7 +10,7 @@ import HowItWorks from "@/components/ui/how-works";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <SiteHeader />
 
       <main className="bg-black mt-20">

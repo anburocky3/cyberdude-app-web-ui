@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import "tailwindcss";
 
@@ -32,5 +32,11 @@
 
   .container_card {
     @apply text-center space-y-5 border-2 border-orange rounded-xl p-3 transition hover:scale-[1.02];
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white font-inter;
   }
 }
