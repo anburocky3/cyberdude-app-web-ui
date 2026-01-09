@@ -6,6 +6,7 @@ import SiteFooter from "@/components/ui/site-footer";
 import WhychooseSection from "@/components/ui/whychoosesection";
 import FaqSection from "@/components/ui/faq-section";
 import WhoIsItFor from "@/components/ui/whoisitfor-section";
+import HowItWorks from "@/components/ui/how-works";
 
 export default function Home() {
   return (
@@ -93,6 +94,9 @@ export default function Home() {
 
         {/* who is it for section */}
         <WhoIsItFor />
+
+        {/* How it works section */}
+        <HowItWorks />
 
         {/* about mentors section */}
         <AboutMentors />
