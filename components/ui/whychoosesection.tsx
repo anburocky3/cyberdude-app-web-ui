@@ -1,7 +1,10 @@
+import whyChooseData from "@/data/whychoosecyberdude";
+import { Icon } from "@iconify/react";
+
 export default function WhyChooseSection() {
   return (
     <>
-      <div className=" max-w-max text-white mx-auto px-4 mt-10 py-10  ">
+      <div className="container max-w-max text-white mx-auto px-4 mt-10 py-10  ">
         <h1 className="text-2xl sm:text-3xl text-center font-semibold text-white  ">
           Why choose
           <span
@@ -10,74 +13,30 @@ export default function WhyChooseSection() {
           >
             CyberDude
           </span>
+          ?
         </h1>
-        <div className=" grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4  mt-10 2xl:px-30 ">
-          <div className="bg-[#1f1f1f] rounded-xl p-6">
-            <span className="text-orange-500 font-semibold">
-              Strict Monitoring
-            </span>
-            <p className="text-gray-500 mt-3 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              ipsa perspiciatis odio saepe temporibus eligendi doloribus, neque
-              pariatur, voluptatum officia dolorem quos eaque velit! Consequatur
-              unde repudiandae quasi ea velit?
-            </p>
-          </div>
-          <div className="bg-[#1f1f1f] rounded-xl p-6">
-            <span className="text-orange-500 font-semibold">
-              Structured Learning
-            </span>
-            <p className="text-gray-500 mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              ipsa perspiciatis odio saepe temporibus eligendi doloribus, neque
-              pariatur, voluptatum officia dolorem quos eaque velit! Consequatur
-              unde repudiandae quasi ea velit?
-            </p>
-          </div>
-          <div className="bg-[#1f1f1f] rounded-xl p-6">
-            <span className="text-orange-500 font-semibold">
-              Natural Intelligence
-            </span>
-            <p className="text-gray-500 mt-3 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              ipsa perspiciatis odio saepe temporibus eligendi doloribus, neque
-              pariatur, voluptatum officia dolorem quos eaque velit! Consequatur
-              unde repudiandae quasi ea velit?
-            </p>
-          </div>
-          <div className="bg-[#1f1f1f] rounded-xl p-6">
-            <span className="text-orange-500 font-semibold">
-              Active Engagaemant
-            </span>
-            <p className="text-gray-500 mt-3 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              ipsa perspiciatis odio saepe temporibus eligendi doloribus, neque
-              pariatur, voluptatum officia dolorem quos eaque velit! Consequatur
-              unde repudiandae quasi ea velit?
-            </p>
-          </div>
-          <div className="bg-[#1f1f1f] rounded-xl p-6">
-            <span className="text-orange-500 font-semibold">
-              Community Learning
-            </span>
-            <p className="text-gray-500 mt-3 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              ipsa perspiciatis odio saepe temporibus eligendi doloribus, neque
-              pariatur, voluptatum officia dolorem quos eaque velit! Consequatur
-              unde repudiandae quasi ea velit?
-            </p>
-          </div>
-          <div className="bg-[#1f1f1f] rounded-xl p-6">
-            <span className="text-orange-500 font-semibold">
-              Natural Inteilligence
-            </span>
-            <p className="text-gray-500 mt-3 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              ipsa perspiciatis odio saepe temporibus eligendi doloribus, neque
-              pariatur, voluptatum officia dolorem quos eaque velit! Consequatur
-              unde repudiandae quasi ea velit?
-            </p>
-          </div>
+        <div className=" grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4 mt-10 2xl:px-30  ">
+          {whyChooseData.map((content, index) => (
+            <div
+              key={index}
+              className="bg-[#1f1f1f]  rounded-xl p-6 transition duration-200 ease-in-out border border-transparent hover:border-orange-500  hover:scale-105 group "
+            >
+              <div className="flex  mb-4">
+                <div className="bg-orange-500/10 p-2 rounded-full  group-hover:bg-black">
+                  <Icon
+                    icon={content.icon}
+                    className="text-orange-500 text-3xl "
+                  />
+                </div>
+              </div>
+              <span className="text-orange-500 text-xl font-semibold">
+                {content.title}
+              </span>
+              <p className="text-gray-500 mt-3 text-sm">
+                {content.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </>
