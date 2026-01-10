@@ -13,7 +13,7 @@ export default function Home() {
     <div className="bg-black">
       <SiteHeader />
 
-      <main className="bg-black mt-20">
+      <main className="bg-black mt-16">
         {/* Hero Section */}
         <section className="hero-section  min-h-screen  flex flex-col text-center  text-white pt-18">
           <h1 className="font-medium lg:text-7xl font-sans mb-3">
