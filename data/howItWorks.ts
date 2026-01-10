@@ -25,7 +25,7 @@ export const HowItWorksStep: HowItWorksStep[] = [
     label: "Mentorship",
     title: "Get mentor insights",
     description:
-      "Connect with mentors to clarify doubts, gain insights, and get real-world guidance while learning."
+      "Connect with mentors to clarify doubts, gain insights, and get real world guidance while learning."
   },
   {
     id: 4,

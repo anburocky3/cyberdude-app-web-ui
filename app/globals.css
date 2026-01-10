@@ -15,15 +15,27 @@
 
   /* custom fonts */
   --font-inter: "Inter", sans-serif;
+
+  /* custom animation */
+  --animate-fadeSlideIn: fadeSlideIn .5s ease-out forwards;
+
+  /* animation keyframes */
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: "translateY(12px)";
+    }
+
+    100% {
+      opacity: 1;
+      transform: "translateY(0)";
+    }
+  }
 }
 
 @layer components {
   .custom-gradient {
     @apply bg-linear-to-r from-orange-300 via-amber-400 to-orange-600 bg-clip-text text-transparent;
-  }
-
-  .mentor_section {
-    @apply flex justify-center items-center;
   }
 
   .content_chips {
