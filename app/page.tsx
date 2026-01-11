@@ -13,20 +13,20 @@ export default function Home() {
     <div className="bg-black">
       <SiteHeader />
 
-      <main className="bg-black mt-20">
+      <main className="bg-black mt-16">
         {/* Hero Section */}
-        <section className="hero-section  min-h-screen  flex flex-col text-center  text-white pt-32">
-          <h1 className="font-medium lg:text-6xl font-sans mb-3">
+        <section className="hero-section  min-h-screen  flex flex-col text-center  text-white pt-18">
+          <h1 className="font-medium lg:text-7xl font-sans mb-3">
             {" "}
             Transform into{" "}
             <span
-              className="bg-linear-to-r from-orange-300 via-amber-400 to-orange-600
+              className="bg-linear-to-r from-orange-300 to-orange-500
          bg-clip-text text-transparent"
             >
               skilled professional
             </span>
           </h1>
-          <p className=" text-gray-200 font-medium text-lg">
+          <p className=" text-gray-200 font-medium text-2xl">
             evidence-based learning environment where completion actually means
             competence.
           </p>
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
 
           <div className=" items-center text-center flex justify-center mt-8">
-            <button className="cta flex flex-row text-center items-center justify-center bg-amber-600 text-white lg:text-xl font-bold w-50 h-14 rounded-4xl  ">
+            <button className="cta flex flex-row text-center items-center justify-center bg-linear-to-r from-orange-300 to-orange-500 text-black lg:text-xl font-bold w-50 h-14 rounded-4xl  ">
               Start journey
             </button>
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
             <div>
               <img
                 className="w-44 rounded-2xl object-fit"
-                src="/img/site/heros/1.png"
+                src="/img/site/heros/5.png"
                 alt="Hero Image"
               />
             </div>
