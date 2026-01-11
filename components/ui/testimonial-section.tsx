@@ -1,7 +1,9 @@
+import { QuoteIcon } from "lucide-react";
+
 export default function TestimonialSection() {
   return (
     <>
-      <section className="px-4 py-16 bg-black">
+      <section className="px-4 py-16 bg-black  bg-linear-to-b from-gray-900 via-black to-black py-5 mt-10">
         <h1 className="text-2xl sm:text-3xl text-center font-semibold text-white ">
           What People Think
           <span
@@ -11,18 +13,22 @@ export default function TestimonialSection() {
             {" "}
             About us
           </span>
+          ?
         </h1>
-        <p className=" text-[#D9D9D9] text-center mt-10 max-w-3xl mx-auto">
+        <QuoteIcon className="mx-auto mt-6 text-gray-600/50 w-12 h-12 rotate-180 absolute left-50 2xl:left-125" />
+        <p className=" text-gray-300 text-center mt-10 max-w-3xl mx-auto">
           “A great course review highlights instructor engagement (clear
           explanations, real-world examples, energy), relevant & practical
           content (useful info, good mix of theory/practice), clear structure
           (well-defined goals, fair assessment), and positive outcomes
           (increased confidence, ability to apply knowledge)”
         </p>
-        <div className="mt-10 text-center font-semibold">
-          <p className="text-[#E25E3B] text-2xl ">Suganthi Pattappan</p>
-          <p className="text-sm">Full stack Developer</p>
-          <p className="text-sm text-gray-500">Chennai,India</p>
+        <div className="mt-10 text-center space-y-2">
+          <p className="text-orange font-semibold text-2xl ">
+            Suganthi Pattappan
+          </p>
+          <p className="text-sm">Full-Stack Developer</p>
+          <p className="text-sm text-gray-500">Chennai, India</p>
         </div>
         <div className="flex mt-10 justify-center items-end ">
           <img

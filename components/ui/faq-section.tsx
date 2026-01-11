@@ -13,13 +13,19 @@ const FaqSection = () => {
     }));
   };
   return (
-    <div>
-      <div className="mx-auto mt-8 pb-4 max-w-3xl px-4">
+    <div className=" border-t border-gray-700/80 border-dotted pt-10 pb-20">
+      <div className="mx-auto mt-8 pb-4 max-w-2xl px-4">
         <div className="mb-12">
-          <h1 className="text-5xl font-bold text-white mb-3">
-            Frequently Asked Questions
+          <h1 className="text-6xl sm:text-3xl text-center font-semibold text-white">
+            Frequently Asked
+            <span
+              className="bg-linear-to-r from-orange-300 via-amber-400 to-orange-600
+              bg-clip-text text-transparent px-2"
+            >
+              Questions
+            </span>
           </h1>
-          <p className="text-lg text-gray-300">
+          <p className="text-xl text-gray-300 text-center mt-3">
             Here&apos;s everything you need to know about our platform
           </p>
         </div>
@@ -47,7 +53,7 @@ const FaqSection = () => {
               </button>
 
               {showAnswer[index] && (
-                <div className="px-6 pb-5 pt-2 bg-white border-t border-indigo-100">
+                <div className="px-6 pb-3 pt-2 bg-white border-t rounded-xl border-indigo-100">
                   <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
               )}

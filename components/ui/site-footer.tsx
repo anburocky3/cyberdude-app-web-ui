@@ -2,7 +2,7 @@ export default function SiteFooter() {
   return (
     <>
       <section className="text-white bg-stone-900  flex flex-col gap-12 ">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-32 px-24 mt-12 ">
+        <div className="flex flex-col md:flex-row items-center  gap-32 px-24 mt-12 ">
           <div className="">
             <h3 className="font-bold text-3xl md:text-xl mb-4">About</h3>
             <ul className="space-y-3">
@@ -144,16 +144,12 @@ export default function SiteFooter() {
 
         <div className="grow border-t border-gray-400/20"></div>
 
-        <div>
-          <p className="font-light px-24 mb-20 text-sm ">
-            © 2026 Copyright{" "}
-            <span className="text-amber-400 text-sm">
-              CyberDude Networks Pvt. Ltd. All Rights Reserved.
-            </span>{" "}
-          </p>
-
-          <p>Privacy</p>
-        </div>
+        <p className="font-light px-24 text-sm text-center py-5">
+          © {new Date().getFullYear()} Copyright{" "}
+          <span className="text-amber-400 text-sm">
+            CyberDude Networks Pvt. Ltd. All Rights Reserved.
+          </span>{" "}
+        </p>
       </section>
     </>
   );

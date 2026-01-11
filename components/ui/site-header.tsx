@@ -63,7 +63,7 @@ export default function SiteHeader() {
             </a> */}
             <a
               href=""
-              className="block w-36  px-4 py-2 rounded bg-linear-to-r from-orange-300  to-orange-500 text-black font-medium hover:from-orange-400 hover:to-orange-500 transition-colors duration-300"
+              className="block w-36  px-4 py-2 rounded-full bg-linear-to-r from-orange-300  to-orange-500 text-black font-medium hover:from-orange-400 hover:to-orange-500 transition-colors duration-300"
             >
               Get Started!
             </a>
