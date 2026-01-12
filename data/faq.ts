@@ -1,4 +1,9 @@
-const FAQData = [
+type FAQItem = {
+  question: string;
+  answer: string;
+};
+
+const FAQData: FAQItem[] = [
   {
     question: "What is CDN App?",
     answer: "CDN App is a Learning & Skill Verification Platform",
