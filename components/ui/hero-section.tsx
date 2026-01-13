@@ -1,22 +1,24 @@
 export default function HeroSection() {
   return (
-    <section className="flex flex-col text-center text-white 0 2xl:pt-20">
-      <h1 className="font-medium lg:text-6xl 2xl:text-7xl font-sans mb-3">
-        {" "}
-        Transform into{" "}
-        <span
-          className="bg-linear-to-r from-orange-300 to-orange-500
+    <section className="flex flex-col  text-white pt-0">
+      <div className="text-center px-12  ">
+        <h1 className="font-extrabold items-center text-3xl lg:text-6xl 2xl:text-7xl mb-3 mt-0">
+          {" "}
+          Transform into{" "}
+          <span
+            className="bg-linear-to-r from-orange-300 flex justify-center to-orange-500
          bg-clip-text text-transparent"
-        >
-          skilled professional
-        </span>
-      </h1>
-      <p className=" text-gray-200 font-medium text-lg 2xl:text-2xl mt-2">
-        evidence-based learning environment where completion actually means
-        competence.
-      </p>
+          >
+            skilled professional
+          </span>
+        </h1>
+        <p className=" text-gray-200 text-2xl font-medium mt-2">
+          evidence-based learning environment where completion actually means
+          competence.
+        </p>
+      </div>
 
-      <div className="flex items-center justify-center mt-6">
+      <div className="flex flex-col items-center justify-center mt-6 gap-2">
         <div className="flex -space-x-3">
           <img
             className="w-10 h-10 rounded-full border-2 border-theme-gradient"
@@ -36,13 +38,13 @@ export default function HeroSection() {
           />
         </div>
 
-        <span className="ml-4 font-sm text-sm text-gray-300">
+        <span className=" font-sm text-sm text-gray-300">
           Getting skilled by{" "}
           <strong className="text-white tracking-wide">1M+ Learners</strong>
         </span>
       </div>
 
-      <div className=" items-center text-center flex justify-center mt-8 space-x-4">
+      <div className=" flex flex-col gap-4 items-center text-center justify-center mt-8 px-4">
         <button className="flex flex-row text-center items-center justify-center bg-linear-to-r from-orange-300 to-orange-500 text-black lg:text-xl font-semibold w-50 h-14 rounded-4xl hover:from-orange-400 hover:to-orange-600 cursor-pointer">
           Start Journey
         </button>
@@ -51,7 +53,7 @@ export default function HeroSection() {
         </button>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-10 mt-16 flex flex-row items-center justify-center gap-8">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-10 mt-6 flex flex-row items-center justify-center gap-8">
         <div>
           <img
             className=" w-44 rounded-2xl object-fit"

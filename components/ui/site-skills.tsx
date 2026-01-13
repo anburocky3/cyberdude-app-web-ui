@@ -2,33 +2,31 @@ const SiteSkills = () => {
   return (
     <section className=" min-h-screen mt-32 mb-30">
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="relative">
-          <h1 className="text-2xl sm:text-3xl text-center font-semibold text-white">
-            Skills you can
-            <span
-              className="bg-linear-to-r from-orange-300 via-amber-400 to-orange-600
+        <div className="flex flex-col gap-4 md:flex-row justify-center md:items-center md:justify-between relative">
+          <div>
+            <h1 className="text-2xl  text-center  font-semibold text-white">
+              Skills you can
+              <span
+                className="bg-linear-to-r from-orange-300 via-amber-400 to-orange-600
               bg-clip-text text-transparent px-2"
-            >
-              Earn
-            </span>{" "}
-          </h1>
-
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 text-white">
-            <div className="flex items-center justify-center ">
-              <label
-                htmlFor="toggle"
-                className="flex items-center cursor-pointer"
               >
-                <div className="relative ">
-                  <input type="checkbox" id="toggle" className="sr-only peer" />
-                  <div className="w-14 h-8 bg-gray-300 rounded-full peer-checked:bg-amber-500 transition-colors duration-300 "></div>
-                  <div className="absolute left-1 top-1 w-6 h-6 bg-amber-700 rounded-full shadow-md transition-transform duration-300 peer-checked:translate-x-6 "></div>
-                </div>
-              </label>
-              <span className="ml-3 text-white font-medium">
-                Course Roadmap
-              </span>
-            </div>
+                Earn
+              </span>{" "}
+            </h1>
+          </div>
+
+          <div className="flex items-center justify-center ">
+            <label
+              htmlFor="toggle"
+              className="flex items-center cursor-pointer"
+            >
+              <div className="relative ">
+                <input type="checkbox" id="toggle" className="sr-only peer" />
+                <div className="w-12 h-6  sm:w-12 sm:h-6 bg-gray-300 rounded-full peer-checked:bg-amber-500 transition-colors duration-300 "></div>
+                <div className="absolute left-1 top-1 w-4 h-4 sm:w-4 sm:h-4 bg-amber-700 rounded-full shadow-md transition-transform duration-300 peer-checked:translate-x-6 "></div>
+              </div>
+            </label>
+            <span className="ml-3 text-white font-medium">Course Roadmap</span>
           </div>
         </div>
 
