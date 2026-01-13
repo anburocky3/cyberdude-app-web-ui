@@ -2,9 +2,9 @@ const SiteSkills = () => {
   return (
     <section className=" min-h-screen mt-32 mb-30">
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex flex-col gap-4 md:flex-row justify-center md:items-center md:justify-between relative">
-          <div>
-            <h1 className="text-2xl  text-center  font-semibold text-white">
+        <div className="flex flex-col items-center gap-4 lg:relative lg:flex-row lg:justify-center w-full">
+          <div className="flex justify-center text-center relative">
+            <h1 className="text-3xl  font-semibold text-white">
               Skills you can
               <span
                 className="bg-linear-to-r from-orange-300 via-amber-400 to-orange-600
@@ -15,7 +15,8 @@ const SiteSkills = () => {
             </h1>
           </div>
 
-          <div className="flex items-center justify-center ">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 text-white">
+          <div className="flex items-center  ">
             <label
               htmlFor="toggle"
               className="flex items-center cursor-pointer"
@@ -28,13 +29,14 @@ const SiteSkills = () => {
             </label>
             <span className="ml-3 text-white font-medium">Course Roadmap</span>
           </div>
+          </div>
         </div>
 
         <div
           id="gridone"
           className="grid gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 lg:mt-20 md-10"
         >
-          <div className="bg-white w-full rounded-lg overflow-hidden flex flex-col border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500">
+          <div className="bg-white w-full rounded-lg overflow-hidden  className border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500">
             <div className="relative  ">
               <img
                 className=" w-full"
@@ -85,7 +87,7 @@ const SiteSkills = () => {
             </div>
           </div>
 
-          <div className="bg-white w-full rounded-lg overflow-hidden flex flex-col border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500  ">
+          <div className="bg-white w-full rounded-lg overflow-hidden className border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500  ">
             <div className="relative ">
               <img
                 className=""
@@ -137,7 +139,7 @@ const SiteSkills = () => {
             </div>
           </div>
 
-          <div className="bg-white w-full rounded-lg overflow-hidden flex flex-col border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500">
+          <div className="bg-white w-full rounded-lg overflow-hidden  className border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500">
             <div className="relative">
               <img
                 className="w-full"
@@ -193,7 +195,7 @@ const SiteSkills = () => {
           id="gridtwo"
           className=" grid gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 lg:mt-20"
         >
-          <div className="bg-white w-full rounded-lg overflow-hidden flex flex-col p-4 border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500 ">
+          <div className="bg-white w-full rounded-lg overflow-hidden className p-4 border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500 ">
             <h1 className="text-orange-400  font-bold text-xl lg:text-2xl md:text-xl sm:text-lg  mb-2 ">
               Python programming Roadmap
             </h1>
@@ -201,7 +203,7 @@ const SiteSkills = () => {
               What you are going to cover in this course!
             </p>
 
-            <div className=" flex flex-col mt-4 gap-4">
+            <div className="flex flex-col mt-4 gap-4">
               <div className="flex  gap-4 bg-stone-100 border border-amber-200 rounded p-2 text-gray-800 text-center items-center ">
                 <svg
                   className="text-amber-500"
@@ -282,7 +284,7 @@ const SiteSkills = () => {
             </div>
           </div>
 
-          <div className="bg-white w-full rounded-lg overflow-hidden flex flex-col p-4 border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500 ">
+          <div className="bg-white w-full rounded-lg overflow-hidden  className p-4 border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500 ">
             <h1 className="text-orange-400  font-bold text-xl lg:text-2xl md:text-xl sm:text-lg  mb-2 ">
               Python programming Roadmap
             </h1>
@@ -290,7 +292,7 @@ const SiteSkills = () => {
               What you are going to cover in this course!
             </p>
 
-            <div className=" flex flex-col mt-4 gap-4">
+            <div className="flex flex-col mt-4 gap-4">
               <div className="flex  gap-4 bg-stone-100 border border-amber-200 rounded p-2 text-gray-800 text-center items-center ">
                 <svg
                   className="text-amber-500"
@@ -371,7 +373,7 @@ const SiteSkills = () => {
             </div>
           </div>
 
-          <div className="bg-white w-full rounded-lg overflow-hidden flex flex-col p-4 border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500 ">
+          <div className="bg-white w-full rounded-lg overflow-hidden  className p-4 border transform   hover:scale-110  border-gray-700 transition-all duration-300 hover:border-orange-500 ">
             <h1 className="text-orange-400  font-bold text-xl lg:text-2xl md:text-xl sm:text-lg  mb-2 ">
               Python programming Roadmap
             </h1>

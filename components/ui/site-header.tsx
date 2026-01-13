@@ -1,7 +1,7 @@
 export default function SiteHeader() {
   return (
-    <header className=" flex justify-between py-10 px-3 md:px-0 z-50">
-      <div className="container mx-auto">
+    <header className=" flex  justify-between py-10 px-3 md:px-0 z-50">
+      <div className="container mx-auto flex">
         <div className="w-full max-w-7xl px-10 lg:px-6 sm:px-6 flex lg:justify-start sm:justify-start">
           <img src="/img/logo.svg" className="w-32 " alt="CyberDude Logo" />
         </div>
