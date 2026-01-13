@@ -12,6 +12,7 @@
 
   /* custom breakpoint */
   --breakpoint-xs: 450px;
+  --breakpoint-md: 780px;
 
   /* custom fonts */
   --font-inter: "Inter", sans-serif;
