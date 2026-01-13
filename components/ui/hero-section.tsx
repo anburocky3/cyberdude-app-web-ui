@@ -1,7 +1,7 @@
 export default function HeroSection() {
   return (
     <section className="flex flex-col items-center text-center text-white pt-0">
-      <h1 className="font-medium lg:text-6xl font-sans mb-3">
+      <h1 className="font-bold lg:font-medium text-3xl lg:text-6xl font-sans mb-3">
         {" "}
         Tranform into{" "}
         <span
@@ -11,12 +11,12 @@ export default function HeroSection() {
           skilled professional
         </span>
       </h1>
-      <p className=" text-gray-200 font-medium text-lg">
+      <p className="text-xl text-gray-200 font-medium text-lg">
         evidence-based learning environment where completion actually means
         competence.
       </p>
 
-      <div className="flex items-center justify-center mt-6 gap-2">
+      <div className="flex flex-col lg:flex-row items-center justify-center mt-6 gap-2">
         <div className="flex -space-x-3">
           <img
             className="w-10 h-10 rounded-full border-2 border-theme-gradient"
