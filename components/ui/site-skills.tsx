@@ -15,7 +15,7 @@ const SiteSkills = () => {
             </h1>
           </div>
 
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 text-white">
+        <div className="lg:absolute right-0 top-1/2 -translate-y-1/2 text-white">
           <div className="flex items-center  ">
             <label
               htmlFor="toggle"
