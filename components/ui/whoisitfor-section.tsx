@@ -1,4 +1,4 @@
-import WhoForData from "@/data/whofor";
+import WhoForData from "@/data/whoForData";
 
 const WhoIsItFor = () => {
   return (
