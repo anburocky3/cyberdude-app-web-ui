@@ -3,15 +3,15 @@ export default function HeroSection() {
     <section className="flex flex-col items-center text-center text-white pt-0">
       <h1 className="font-bold lg:font-medium text-3xl lg:text-6xl font-sans mb-3">
         {" "}
-        Tranform into{" "}
+        Transform into{" "}
         <span
-          className="bg-gradient-to-r from-orange-300 via-amber-400 to-orange-600
+          className="bg-linear-to-r from-orange-300 via-amber-400 to-orange-600
          bg-clip-text text-transparent"
         >
           skilled professional
         </span>
       </h1>
-      <p className="text-xl text-gray-200 font-medium text-lg">
+      <p className=" text-gray-200 font-medium text-lg">
         evidence-based learning environment where completion actually means
         competence.
       </p>

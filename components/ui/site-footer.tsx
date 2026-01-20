@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 export default function SiteFooter() {
   return (
     <footer className="bg-black text-gray-400">
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <div className="mx-auto max-w-7xl px-6 py-16">
           {/* Main Footer Content */}
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 ">

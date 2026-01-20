@@ -1,8 +1,8 @@
 import whyChooseData from "@/data/whyChooseData";
 
-export default function WhyChooseSection() {
+export default function WhyChooseSection(props: { className?: string }) {
   return (
-    <section className=" relative  ">
+    <section className={`relative ${props.className}`}>
       <div className="container mx-auto py-10 px-3">
         <h2 className="text-center text-4xl font-semibold mb-20 ">
           Why choose <span className="custom-gradient">Cyberdude</span>?
@@ -10,7 +10,7 @@ export default function WhyChooseSection() {
 
         <div className="relative max-w-6xl mx-auto">
           {/* Vertical line */}
-          <div className="absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-linear-to-b from-transparent via-orange-500 to-transparent shadow-[0_0_25px_#f97316]" />
+          <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-linear-to-b from-transparent via-orange-500 to-transparent shadow-[0_0_25px_#f97316]" />
 
           <div className="space-y-20">
             {whyChooseData.map((item) => {

@@ -19,28 +19,28 @@ export default function Home() {
         <HeroSection />
 
         {/* Why Choose Section */}
-        {/* <WhyChooseSection /> */}
+        <WhyChooseSection className="mt-30" />
 
         {/* who is it for section */}
-        {/* <WhoIsItFor /> */}
+        <WhoIsItFor />
 
         {/* How it works section */}
-        {/* <HowItWorks /> */}
+        <HowItWorks />
 
         {/* about mentors section */}
-        {/* <AboutMentors /> */}
+        <AboutMentors />
 
         {/* site skills */}
         <SiteSkills />
 
         {/* testimonial */}
-        {/* <Testimonial /> */}
+        <Testimonial />
 
         {/* FAQ section */}
-        {/* <FaqSection /> */}
+        <FaqSection />
 
         {/* sitefooter */}
-        {/* <SiteFooter /> */}
+        <SiteFooter />
       </main>
     </div>
   );
