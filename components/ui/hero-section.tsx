@@ -57,7 +57,7 @@ export default function HeroSection() {
 
           <div>
             <img
-              className="w-72 rounded-2xl object-fit"
+              className="w-72 rounded-2xl object-contain"
               src="/img/site/heros/3.png"
               alt="Hero Image"
             />
