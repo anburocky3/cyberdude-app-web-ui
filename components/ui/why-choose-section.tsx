@@ -1,43 +1,54 @@
-import whyChooseData from "@/data/why-choose-data";
+import whyChooseData from "@/data/whyChooseData";
 
 export default function WhyChooseSection() {
   return (
-    <>
-      <div className="container max-w-max text-white mx-auto px-4 mt-10 py-32  ">
-        <h1 className="text-2xl sm:text-4xl text-center font-semibold text-white  ">
-          Why choose
-          <span
-            className="bg-linear-to-r from-orange-300 via-amber-400 to-orange-600
-              bg-clip-text text-transparent px-2"
-          >
-            CyberDude
-          </span>
-          ?
-        </h1>
-        <div className=" grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4 mt-10 2xl:px-30  ">
-          {whyChooseData.map((content, index) => {
-            const Icon = content.icon;
-            return (
-              <div
-                key={index}
-                className="bg-[#1f1f1f]  rounded-xl p-6 transition duration-200 ease-in-out border border-transparent hover:border-orange-500  hover:scale-105 group "
-              >
-                <div className="flex  mb-4">
-                  <div className="bg-orange-500/10 p-2 rounded-full  group-hover:bg-black">
-                    <Icon className="text-orange-500 w-8 h-8" />
+    <section className=" relative  ">
+      <div className="container mx-auto py-10 px-3">
+        <h2 className="text-center text-4xl font-semibold mb-20 ">
+          Why choose <span className="custom-gradient">Cyberdude</span>?
+        </h2>
+
+        <div className="relative max-w-6xl mx-auto">
+          {/* Vertical line */}
+          <div className="absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-linear-to-b from-transparent via-orange-500 to-transparent shadow-[0_0_25px_#f97316]" />
+
+          <div className="space-y-20">
+            {whyChooseData.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <div
+                  key={item.id}
+                  className={`relative flex items-center ${
+                    item.side === "left" ? "justify-start" : "justify-end"
+                  }`}
+                >
+                  {/* Icon */}
+                  <div className="absolute left-1/2 -translate-x-1/2 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-[#1c1c1c] shadow-[0_0_20px_#f97316]">
+                    <Icon className="h-5 w-5 text-orange-400" />
+                  </div>
+
+                  {/* Content */}
+                  <div
+                    className={`w-[45%] ${
+                      item.side === "left"
+                        ? "text-right pr-12"
+                        : "text-left pl-12"
+                    }`}
+                  >
+                    <h3 className="text-lg font-semibold text-orange-400">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-400">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
-                <span className="text-orange-500 text-xl font-semibold">
-                  {content.title}
-                </span>
-                <p className="text-gray-500 mt-3 text-sm">
-                  {content.description}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

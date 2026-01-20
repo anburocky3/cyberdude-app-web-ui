@@ -1,156 +1,120 @@
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+
 export default function SiteFooter() {
   return (
-    <>
-      <section className="text-white bg-stone-900  flex flex-col gap-12 ">
-        <div className="flex flex-col md:flex-row items-center  gap-32 px-24 mt-12 ">
-          <div className="">
-            <h3 className="font-bold text-3xl md:text-xl mb-4">About</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="font-light text-lg  md:text-sm ">
-                  Company
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-light text-lg  md:text-sm">
-                  Location
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-light text-lg  md:text-sm  ">
-                  Contact feedback
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="">
-            <h3 className="font-bold text-3xl md:text-xl mb-4">Learners</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="font-light text-lg  md:text-sm ">
-                  Courses
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-light text-lg  md:text-sm  ">
-                  Course roadmaps
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="font-light text-lg  md:text-sm ">
-                  Projects
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="">
-            <h3 className="font-bold text-3xl md:text-xl mb-4">Recruiters</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="font-light text-lg md:text-sm">
-                  People
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-light text-lg md:text-sm">
-                  Sessions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="font-light text-lg md:text-sm ">
-                  Testimonials
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <div className="">
-              <img className=" h-20  " src="/img/logo.svg" alt="company-logo" />
+    <footer className="bg-black text-gray-400">
+      <div className="container mx-auto">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          {/* Main Footer Content */}
+          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 ">
+            {/* Brand */}
+            <div className="col-span-2">
+              <div className="mb-5 w-44">
+                <img src="/img/logo.svg" alt="CyberDude logo" />
+              </div>
+              <p className="">
+                CyberDude Networks Pvt. Ltd. is Startup who crave to create
+                creative product.
+              </p>
+              <p className="text-sm leading-relaxed">
+                We stimulate creativity in each and everything that appears to
+                our eye. We love doing it.
+              </p>
             </div>
 
-            <div className="flex flex-row py-8 px-10 space-x-8">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 15 15"
-                className="hover:text-amber-600"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  d="M4.5 6v5m6 0V8.5a2 2 0 1 0-4 0V11V6M4 4.5h1M1.5.5h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-12a1 1 0 0 1 1-1Z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                className="hover:text-amber-600"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="m3 21l7.548-7.548M21 3l-7.548 7.548m0 0L8 3H3l7.548 10.452m2.904-2.904L21 21h-5l-5.452-7.548"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 14 14"
-                className="hover:text-amber-600"
-              >
-                <g
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect width="13" height="10" x=".5" y="2" rx="2" />
-                  <path d="M5.31 9.32v-4.2a.39.39 0 0 1 .6-.34l3.6 2.1a.4.4 0 0 1 0 .69l-3.6 2.1a.4.4 0 0 1-.6-.35Z" />
-                </g>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 48 48"
-                className="hover:text-amber-600"
-              >
-                <g fill="none" stroke="currentColor" strokeWidth="3">
-                  <path
-                    strokeLinejoin="round"
-                    d="M3 24a21 21 0 1 0 42 0a21 21 0 1 0-42 0"
-                  />
-                  <path
-                    strokeLinejoin="round"
-                    d="M15 24a9 21 0 1 1 18 0a9 21 0 1 1-18 0"
-                  />
-                  <path strokeLinecap="round" d="M4.5 31h39m-39-14h39" />
-                </g>
-              </svg>
+            {/* About */}
+            <div>
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+                About
+              </h3>
+              <ul className="space-y-2 text-sm">
+                {["Company", "Location", "Contact feedback"].map((item) => (
+                  <li key={item}>
+                    <a
+                      href="#"
+                      className="inline-block transition hover:text-orange-500 hover:translate-x-1"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+                Learners
+              </h3>
+              <ul className="space-y-2 text-sm">
+                {["Courses", "Course Roadmaps", "Projects"].map((item) => (
+                  <li key={item}>
+                    <a
+                      href="#"
+                      className="inline-block transition hover:text-orange-500 hover:translate-x-1"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+                Recruiters
+              </h3>
+              <ul className="space-y-2 text-sm">
+                {["People", "sessions", "Testimonials"].map((item) => (
+                  <li key={item}>
+                    <a
+                      href="#"
+                      className="inline-block transition hover:text-orange-500 hover:translate-x-1"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Social */}
+            <div>
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+                Social
+              </h3>
+              <div className="flex gap-4">
+                {[Facebook, Instagram, Linkedin, Youtube].map((Icon, i) => (
+                  <a
+                    key={i}
+                    href="#"
+                    aria-label="social link"
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-700 transition hover:border-orange-500 hover:text-orange-500"
+                  >
+                    <Icon size={18} />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="grow border-t border-gray-400/20"></div>
+        {/* Bottom Footer */}
+        <div className="border-t border-gray-800">
+          <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-4 text-sm sm:flex-row sm:items-center sm:justify-between">
+            <p>© 2026 CyberDude Networks Pvt. Ltd. All Rights Reserved.</p>
 
-        <p className="font-light px-24 text-sm text-center py-5">
-          © {new Date().getFullYear()} Copyright{" "}
-          <span className="text-amber-400 text-sm">
-            CyberDude Networks Pvt. Ltd. All Rights Reserved.
-          </span>{" "}
-        </p>
-      </section>
-    </>
+            <div className="flex gap-6">
+              {["Terms", "Privacy", "Compliances"].map((item) => (
+                <a
+                  key={item}
+                  href="#"
+                  className="transition hover:text-orange-500"
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
