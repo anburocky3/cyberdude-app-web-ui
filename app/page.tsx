@@ -19,7 +19,7 @@ export default function Home() {
         <HeroSection />
 
         {/* Why Choose Section */}
-        <WhyChooseSection />
+        <WhyChooseSection className="mt-30" />
 
         {/* who is it for section */}
         <WhoIsItFor />

@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { HowItWorksStep } from "@/data/howItWorks";
+import { HowItWorksStudents, HowItWorksRecruiters } from "@/data/howItWorks";
 import { useIsDesktop } from "@/hooks/useIsDesktop";
+import { ToggleLeft, ToggleRight } from 'lucide-react';
 
 export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(1);
+  const [isRecruiterActive, setIsRecruiterActive] = useState(false);
   const isDesktop = useIsDesktop();
 
   const handleInteraction = (id: number) => {
@@ -20,47 +22,82 @@ export default function HowItWorks() {
     }
   };
 
+  const handleRecruiterTab = () => {
+    setIsRecruiterActive(prev => !prev); //recruiter tab toggle
+  };
+
   return (
     <section className="w-full text-white bg-linear-to-b from-gray-900 via-black to-black py-5 mt-10">
-      <div className="container mx-auto py-15">
+      <div className="container mx-auto px-3 py-15 relative space-y-3">
         {/* Heading */}
-        <h2 className="text-center text-4xl font-semibold mb-3 relative">
+        <h2 className="text-center text-4xl font-semibold mb-3">
           How it <span className="custom-gradient">Works</span>?
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 text-white text-base">
-            <div className="flex items-center justify-center ">
-              <label
-                htmlFor="toggle"
-                className="flex items-center cursor-pointer"
-              >
-                <div className="relative ">
-                  <input type="checkbox" id="toggle" className="sr-only peer" />
-                  <div className="w-14 h-8 bg-gray-300 rounded-full peer-checked:bg-amber-500 transition-colors duration-300 "></div>
-                  <div className="absolute left-1 top-1 w-6 h-6 bg-amber-700 rounded-full shadow-md transition-transform duration-300 peer-checked:translate-x-6 "></div>
-                </div>
-              </label>
-              <span className="ml-3 text-white font-medium">Recruiter</span>
-            </div>
-          </div>
         </h2>
 
-        <p className="text-sm text-mute text-center ">
-          For those students how to use this platform
-        </p>
+        {/* toggle menu */}
+        <div className="flex gap-3 items-center justify-center absolute top-2 right-1 md:right-10 md:top-10"
+          onClick={handleRecruiterTab}>
+          {!isRecruiterActive ? <div className="text-orange-800 cursor-pointer">
+            <ToggleLeft size={34} />
+          </div> :
+            <div className="text-orange-600 cursor-pointer">
+              <ToggleRight size={34} />
+            </div>}
+          <p className="font-semibold text-sm cursor-default">For Recruiters</p>
+        </div>
+
+        {!isRecruiterActive ?
+          <p className="text-sm text-mute text-center mb-5">
+            For those students how to use this platform
+          </p> :
+          <p className="text-sm text-mute text-center mb-5">
+            For those recruiters how to use this platform
+          </p>}
 
         {/* Top revealing section */}
-        <div className="h-55 p-3 flex justify-center items-center mb-10">
-          {HowItWorksStep.map((step) => {
+        <div className="w-fit mx-auto p-5 flex justify-center items-center mb-10 rounded-xl bg-zinc-900/20">
+          {/* students tab */}
+          {!isRecruiterActive && HowItWorksStudents.map((step) => {
             return step.id === activeStep ? (
               <div
                 key={step.id}
-                className="transition-all duration-500 opacity-0 translate-y-2 ease-out animate-fadeSlideIn "
+                className="transition-all duration-500 opacity-0 translate-y-2 ease-out animate-fadeSlideIn flex flex-col md:flex-row justify-center items-center gap-10"
               >
-                <h2 className="text-center text-2xl font-medium text-gray-100 mb-4">
-                  {step.title}
-                </h2>
-                <p className="text-gray-400 leading-relaxed">
-                  {step.description}
-                </p>
+                <div className="w-55 h-55">
+                  <img src={step.illustration} alt={`${step.label} svg`} />
+                </div>
+                <div className="w-full md:w-80 flex flex-col items-start justify-center">
+                  <h2 className="text-2xl font-medium text-gray-100 mb-4">
+                    {step.title}
+                  </h2>
+                  <p className="text-gray-400 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ) : (
+              ""
+            );
+          })}
+
+          {/* recruiter tab */}
+          {isRecruiterActive && HowItWorksRecruiters.map((step) => {
+            return step.id === activeStep ? (
+              <div
+                key={step.id}
+                className="transition-all duration-500 opacity-0 translate-y-2 ease-out animate-fadeSlideIn flex flex-col md:flex-row justify-center items-center gap-10"
+              >
+                <div className="w-55 h-55">
+                  <img src={step.illustration} alt={`${step.label} svg`} />
+                </div>
+                <div className="w-full md:w-80 flex flex-col items-start justify-center">
+                  <h2 className="text-2xl font-medium text-gray-100 mb-4">
+                    {step.title}
+                  </h2>
+                  <p className="text-gray-400 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
               </div>
             ) : (
               ""
@@ -70,7 +107,8 @@ export default function HowItWorks() {
 
         {/* Showing steps through data */}
         <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14">
-          {HowItWorksStep.map((step) => {
+          {/* students tab */}
+          {!isRecruiterActive && HowItWorksStudents.map((step) => {
             const isActive = step.id === activeStep;
 
             return (
@@ -80,34 +118,73 @@ export default function HowItWorks() {
                 onClick={() => handleInteraction(step.id)}
                 className="cursor-pointer flex justify-start"
               >
-                {/* Step Content */}
                 <div
-                  className={`text-center p-5 rounded-xl transition-colors duration-300 border border-gray-500 ${
-                    isActive ? "bg-orange border-none" : ""
-                  }`}
+                  className={`w-full text-center p-5 rounded-xl transition-colors duration-300 border border-gray-500 ${isActive ? "bg-orange border-none" : ""
+                    }`}
                 >
                   <span
                     className={"block mb-3 text-lg font-semibold text-white"}
                   >
-                    Step {step.id}:
+                    {step.label}:
                   </span>
 
                   <p
-                    className={`text-sm leading-relaxed ${
-                      isActive ? "text-white" : "text-mute"
-                    }`}
+                    className={`text-sm leading-relaxed ${isActive ? "text-white" : "text-mute"
+                      }`}
                   >
-                    {step.label === "Login" &&
+                    {step.id === 1 &&
                       "Login to the site and pick your career path to learn"}
 
-                    {step.label === "Learn" &&
+                    {step.id === 2 &&
                       "Learn through the modules and get points to unlock another career path"}
 
-                    {step.label === "Mentorship" &&
+                    {step.id === 3 &&
                       "Get insights from our mentors to clarify your doubts"}
 
-                    {step.label === "Career" &&
+                    {step.id === 4 &&
                       "Get your aspiring dream job by completing the career track"}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+
+          {/* recruiters tab */}
+          {isRecruiterActive && HowItWorksRecruiters.map((step) => {
+            const isActive = step.id === activeStep;
+
+            return (
+              <div
+                key={step.id}
+                onMouseEnter={() => handleHover(step.id)}
+                onClick={() => handleInteraction(step.id)}
+                className="cursor-pointer flex justify-start"
+              >
+                <div
+                  className={`w-full text-center p-5 rounded-xl transition-colors duration-300 border border-gray-500 ${isActive ? "bg-orange border-none" : ""
+                    }`}
+                >
+                  <span
+                    className={"block mb-3 text-lg font-semibold text-white"}
+                  >
+                    {step.label}:
+                  </span>
+
+                  <p
+                    className={`text-sm leading-relaxed ${isActive ? "text-white" : "text-mute"
+                      }`}
+                  >
+                    {step.id === 1 &&
+                      "Access students aligned with your hiring needs"}
+
+                    {step.id === 2 &&
+                      "Review progress based on verified learning data"}
+
+                    {step.id === 3 &&
+                      "Connect directly with shortlisted candidates"}
+
+                    {step.id === 4 &&
+                      "Finalize the students and hiring with confidence"}
                   </p>
                 </div>
               </div>

@@ -16,7 +16,7 @@ const FaqSection = () => {
     <div className=" border-t border-gray-700/80 border-dotted pt-10 pb-20">
       <div className="mx-auto mt-8 pb-4 max-w-2xl px-4">
         <div className="mb-12">
-          <h1 className="text-6xl sm:text-3xl text-center font-semibold text-white">
+          <h1 className="text-3xl  md:text-6xl text-center font-semibold text-white">
             Frequently Asked
             <span
               className="bg-linear-to-r from-orange-300 via-amber-400 to-orange-600

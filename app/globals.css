@@ -12,6 +12,7 @@
 
   /* custom breakpoint */
   --breakpoint-xs: 450px;
+  --breakpoint-md: 780px;
 
   /* custom fonts */
   --font-inter: "Inter", sans-serif;
@@ -34,6 +35,22 @@
 }
 
 @layer components {
+  .desktop-links {
+    @apply items-center justify-center hidden md:flex;
+  }
+
+  .mobile-links {
+    @apply fixed right-0 top-0 w-full h-screen bg-zinc-900 flex justify-center items-center transition xs:w-90 md:hidden;
+  }
+
+  .open-nav {
+    @apply translate-x-0;
+  }
+
+  .close-btn {
+    @apply text-orange-500 transition-colors cursor-pointer duration-300 md:hidden absolute left-4 top-4;
+  }
+
   .custom-gradient {
     @apply bg-linear-to-r from-orange-300 via-amber-400 to-orange-600 bg-clip-text text-transparent;
   }
@@ -57,6 +74,10 @@
 
 @layer base {
   body {
-    @apply bg-black text-white font-inter;
+    @apply bg-black text-white font-inter relative;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 }

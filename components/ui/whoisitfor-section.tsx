@@ -1,4 +1,4 @@
-import WhoForData from "@/data/whofor";
+import WhoForData from "@/data/whoForData";
 
 const WhoIsItFor = () => {
   return (
@@ -14,7 +14,7 @@ const WhoIsItFor = () => {
         ?
       </h1>
 
-      <div className="flex justify-center items-center mt-20">
+      <div className="flex justify-center items-center mt-20 mx-5">
         <div className="flex flex-col gap-10 md:flex-row max-w-7xl">
           {WhoForData.map((card, index) => (
             <div
