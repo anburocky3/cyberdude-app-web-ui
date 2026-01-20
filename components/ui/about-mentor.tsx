@@ -1,49 +1,57 @@
-export default function AboutMentor() {
+"use client";
+
+import { MentorDetails } from "@/data/aboutMentors";
+
+export default function WhoTeaches() {
   return (
-    <section className="relative text-white">
-      <div className="container mx-auto px-5 py-10 flex flex-col md:flex-row justify-between items-center gap-5">
-        {/* mentors content */}
-        <div className="w-full h-full space-y-5">
-          <h3 className="text-md md:text-xl text-mute font-semibold">
-            About Our <span className="text-orange">Mentors</span> and
-            <span className="text-orange"> Recruiters</span>
-          </h3>
-          <h1 className="text-3xl md:text-5xl font-bold uppercase">
-            Your way to New <span className="custom-gradient">Horizons</span>
-          </h1>
-          <p className="text-md text-mute">
-            Find mentors who will help your potential, achieve your professional
-            and personal goals, and build the future you dream of today
+    <section className="bg-black text-white py-10 pb-15 px-3">
+      <div className="container mx-auto">
+
+        {/* Content */}
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <h2 className="text-center text-4xl font-semibold mb-6">
+            Who Teaches <span className="custom-gradient">Our Students</span>?
+          </h2>
+
+          <p className="text-gray-400 leading-relaxed mb-4">
+            {MentorDetails.description}
           </p>
 
-          <div className="flex gap-3 items-center justify-start mt-5 flex-wrap">
-            <p className="content_chips">Frontend</p>
-            <p className="content_chips">Backend</p>
-            <p className="content_chips">Devops</p>
-            <p className="content_chips">Cloud</p>
-          </div>
-
-          <div className="flex justify-start gap-5 items-center mt-10">
-            <div className="container_card">
-              <h4 className="text-sm font-semibold">
-                Coaches and Mentors with Extensive Experience
-              </h4>
-              <p className="text-2xl text-mute font-bold">5+ Years</p>
-            </div>
-
-            <div className="container_card">
-              <h4 className="text-sm font-semibold">
-                Active users who can find ideal mentors on this site
-              </h4>
-              <p className="text-2xl text-mute font-bold">10k Users</p>
-            </div>
-          </div>
+          <p className="text-gray-500 text-sm leading-relaxed">
+            {MentorDetails.subDescription}
+          </p>
         </div>
 
-        {/* mentors banner */}
-        <div className="w-full sm:w-[75%] h-full sm:h-[60%]">
-          <img src="/img/mentor/anbuselvan-tutor.png" alt="Mentor banner" />
+        {/* Image grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+          {MentorDetails.mentors.map((mentor) => (
+            <div
+              key={mentor.id}
+              className="relative overflow-hidden rounded-2xl bg-black opacity-0 translate-y-6 animate-fadeSlideIn transition-transform duration-500 hover:scale-[1.02] group"
+            >
+              {/* Image */}
+              <img
+                src={mentor.image}
+                alt={mentor.name}
+                className="object-cover grayscale-0 group-hover:grayscale transition-all duration-500"
+              />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/50 to-transparent" />
+              <div
+                className="absolute bottom-4 left-4 right-4 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400 hidden lg:block"
+              >
+                <p className="font-semibold custom-gradient">
+                  {mentor.name}
+                </p>
+                <p className="text-sm text-semibold text-white">
+                  {mentor.role}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
+
       </div>
     </section>
   );
