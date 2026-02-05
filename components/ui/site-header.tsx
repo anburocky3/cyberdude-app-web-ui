@@ -2,6 +2,7 @@
 
 import { Menu, ChevronDown, X } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function SiteHeader() {
   const [navOpen, setNavOpen] = useState(false);
@@ -52,12 +53,12 @@ export default function SiteHeader() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#Pricing"
-                  className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
-                >
-                  Pricing
-                </a>
+                <Link
+                    href="/pricing"
+                    className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
+                  >
+                    pricing
+                  </Link>
               </li>
             </ul>
           </div>
@@ -108,12 +109,12 @@ export default function SiteHeader() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#Pricing"
+                  <Link
+                    href="/pricing"
                     className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
                   >
-                    Pricing
-                  </a>
+                    pricing
+                  </Link>
                 </li>
               </ul>
 
