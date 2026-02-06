@@ -1,27 +1,18 @@
 "use client";
 
-import Navbar from "@/app/experiment/pricing/Navbar";
-import HeroSection from "@/app/experiment/pricing/Herosection";
-import FreeCoursesSection from "@/app/experiment/pricing/Freecoursesection";
-import PremiumCoursesSection from "@/app/experiment/pricing/premiumcoursesection";
-import RewardsSection from "@/app/experiment/pricing/Rewardsection";
-import PricingSection from "@/app/experiment/pricing/pricingsection";
-import Footer from "@/app/experiment/pricing/Footer";
+// import Navbar from "@/app/experiment/pricing/Navbar";
+import PricingSection from "@/components/ui/pricing-section";
+import SiteHeader from "@/components/ui/site-header";
+import SiteFooter from "@/components/ui/site-footer";
 
-const Index = () => {
-    return (
-        <div className="min-h-screen bg-background scanline">
-            {/* <Navbar /> */}
-            <main>
-                {/* <HeroSection /> */}
-                {/* <FreeCoursesSection /> */}
-                {/* <PremiumCoursesSection /> */}
-                {/* <RewardsSection /> */}
-                <PricingSection />
-            </main>
-            {/* <Footer /> */}
-        </div>
-    );
+const PricingPage = () => {
+  return (
+    <div className="min-h-screen bg-background ">
+      <SiteHeader />
+      <PricingSection />
+      <SiteFooter />
+    </div>
+  );
 };
 
-export default Index;
+export default PricingPage;

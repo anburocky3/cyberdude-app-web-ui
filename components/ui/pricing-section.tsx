@@ -14,9 +14,7 @@ const PricingSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full theme-gradient text-black border  mb-6">
             <Star className="w-4 h-4" />
-            <span className="text-sm font-medium">
-              Strategic Access Tiers
-            </span>
+            <span className="text-sm font-medium">Strategic Access Tiers</span>
           </div>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
             Choose Your <span className=" custom-gradient">Learning Path</span>
@@ -32,7 +30,7 @@ const PricingSection = () => {
           {valueHighlights.map((item, index) => (
             <div
               key={index}
-              className="p-4 rounded-xl bg-card border border-border text-center card-hover"
+              className="p-4 rounded-xl bg-card border border-gray-800 text-center card-hover"
             >
               <item.icon className="w-6 h-6 text-primary mx-auto mb-2" />
               <div className="font-display text-2xl font-bold text-foreground">
@@ -48,10 +46,8 @@ const PricingSection = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative p-8 rounded-2xl bg-card border transition-all duration-300 card-hover  ${
-                plan.popular
-                  ? "border-cyber-orange glow-box-orange"
-                  : ""
+              className={`relative p-8 rounded-2xl bg-card border border-gray-800 transition-all duration-300 card-hover  ${
+                plan.popular ? "border-cyber-orange glow-box-orange" : ""
               }`}
             >
               {plan.popular && (
@@ -105,20 +101,22 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-             
-                <button
-                  className={`w-full  ${plan.popular ? "flex justify-center items-center theme-gradient  text-black hover:shadow-[0_0_30px_hsl(25,100%,55%,0.5)] hover:scale-105 h-14 rounded-lg px-10 text-base" : 
-                    "bg-linear-to-r flex justify-center items-center theme-gradient text-black hover:shadow-[0_0_30px_hsl(25,100%,55%,0.5)] hover:scale-105 h-14 rounded-lg px-10 text-base"}`}
-                >
-                  {plan.cta} <ArrowRight className=" " />    
-                </button>
-              </div>
-            
+
+              <button
+                className={`w-full  ${
+                  plan.popular
+                    ? "flex justify-center items-center theme-gradient  text-black hover:shadow-[0_0_30px_hsl(25,100%,55%,0.5)] hover:scale-105 h-14 rounded-lg px-10 text-base"
+                    : "bg-linear-to-r flex justify-center items-center theme-gradient text-black hover:shadow-[0_0_30px_hsl(25,100%,55%,0.5)] hover:scale-105 h-14 rounded-lg px-10 text-base"
+                }`}
+              >
+                {plan.cta} <ArrowRight className=" " />
+              </button>
+            </div>
           ))}
         </div>
 
         {/* Trust Section */}
-        <div className="p-8 md:p-12 rounded-2xl bg-linear-to-r from-primary/10 via-cyber-purple/10 to-cyber-pink/10 border border-primary/20">
+        <div className="p-8 md:p-12 rounded-2xl bg-linear-to-r from-primary/10 via-cyber-purple/10 to-cyber-pink/10 border border-yellow-800 scanline">
           <div className="text-center max-w-3xl mx-auto">
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
               Why Choose <span className="custom-gradient">CyberDude</span>?

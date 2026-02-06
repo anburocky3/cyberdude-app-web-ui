@@ -15,13 +15,13 @@ export default function SiteHeader() {
     <header className="w-full">
       <div className="container mx-auto py-5 flex justify-between items-center px-3">
         {/* company logo */}
-        <div className="w-45 h-10">
+        <Link href={"/"} className="w-45 h-10">
           <img
             src="/img/logo.svg"
             className="w-full h-full object-contain"
             alt="CyberDude Networks Logo"
           />
-        </div>
+        </Link>
 
         <div className="flex gap-3 items-center justify-between">
           {/* desktop navigation links */}
@@ -32,8 +32,8 @@ export default function SiteHeader() {
                   href="#Company"
                   className="hover:text-orange-500 transition-colors cursor-pointer duration-300 flex"
                 >
-                  <ChevronDown />
                   <span className="ml-1">Company</span>
+                  <ChevronDown />
                 </a>
               </li>
               <li>
@@ -54,11 +54,11 @@ export default function SiteHeader() {
               </li>
               <li>
                 <Link
-                    href="/pricing"
-                    className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
-                  >
-                    pricing
-                  </Link>
+                  href="/pricing"
+                  className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
+                >
+                  Pricing
+                </Link>
               </li>
             </ul>
           </div>
@@ -86,10 +86,10 @@ export default function SiteHeader() {
                 <li>
                   <a
                     href="#Company"
-                    className="hover:text-orange-500 transition-colors cursor-pointer duration-300 flex"
+                    className="hover:text-orange-500 transition-colors cursor-pointer duration-300 flex items-center"
                   >
+                    <span className="mr-1">Company</span>
                     <ChevronDown />
-                    <span className="ml-1">Company</span>
                   </a>
                 </li>
                 <li>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "../app/experiment/pricing/style/pricing.css"
 
 export const metadata: Metadata = {
   title: "CyberDude UI",
