@@ -8,79 +8,14 @@
     --font-jetbrains: 'JetBrains Mono', monospace;
 
     /* custom colors */
-    --color-background: hsl(222, 47%, 6%);
-    --color-foreground: hsl(210, 40%, 98%);
-
-    --color-card: hsl(222, 47%, 8%);
-    --color-card-foreground: hsl(210, 40%, 98%);
-
-    --color-popover: hsl(222, 47%, 8%);
-    --color-popover-foreground: hsl(210, 40%, 98%);
-
-    --color-primary: hsl(187, 85%, 53%);
-    --color-primary-foreground: hsl(222, 47%, 6%);
-
-    --color-secondary: hsl(222, 30%, 14%);
-    --color-secondary-foreground: hsl(210, 40%, 98%);
-
-    --color-muted: hsl(222, 30%, 12%);
-    --color-muted-foreground: hsl(215, 20%, 55%);
-
-    --color-accent: hsl(262, 83%, 58%);
-    --color-accent-foreground: hsl(210, 40%, 98%);
-
-    --color-destructive: hsl(0, 84%, 60%);
-    --color-destructive-foreground: hsl(210, 40%, 98%);
-
     --color-border: hsl(222, 30%, 18%);
-    --color-input: hsl(222, 30%, 18%);
-    --color-ring: hsl(187, 85%, 53%);
-
-    /* Custom CyberDude tokens */
-    --color-glow-primary: hsl(187, 85%, 53%);
-    --color-glow-accent: hsl(262, 83%, 58%);
-    --color-gradient-start: hsl(187, 85%, 53%);
-    --color-gradient-end: hsl(262, 83%, 58%);
-
-    --color-surface-1: hsl(222, 47%, 8%);
-    --color-surface-2: hsl(222, 40%, 11%);
-    --color-surface-3: hsl(222, 35%, 14%);
-
-    --color-success: hsl(142, 76%, 45%);
-    --color-warning: hsl(38, 92%, 50%);
-
-    --color-sidebar-background: hsl(222, 47%, 6%);
-    --color-sidebar-foreground: hsl(210, 40%, 98%);
-    --color-sidebar-primary: hsl(187, 85%, 53%);
-    --color-sidebar-primary-foreground: hsl(222, 47%, 6%);
-    --color-sidebar-accent: hsl(222, 30%, 14%);
-    --color-sidebar-accent-foreground: hsl(210, 40%, 98%);
-    --color-sidebar-border: hsl(222, 30%, 18%);
-    --color-sidebar-ring: hsl(187, 85%, 53%);
-}
-
-@layer dark-theme {
-    .dark {
-        --color-background: hsl(222, 47%, 6%);
-        --color-foreground: hsl(210, 40%, 98%);
-        --color-card: hsl(222, 47, % 8%);
-        --color-card-foreground: hsl(210, 40%, 98%);
-        --color-popover: hsl(222, 47, % 8%);
-        --color-popover-foreground: hsl(210, 40%, 98%);
-        --color-primary: hsl(187, 85%, 53%);
-        --color-primary-foreground: hsl(222, 47%, 6%);
-        --color-secondary: hsl(222, 30%, 14%);
-        --color-secondary-foreground: hsl(210, 40%, 98%);
-        --color-muted: hsl(222, 30%, 12%);
-        --color-muted-foreground: hsl(215, 20%, 55%);
-        --color-accent: hsl(262, 83%, 58%);
-        --color-accent-foreground: hsl(210, 40%, 98%);
-        --color-destructive: hsl(0, 84%, 60%);
-        --color-destructive-foreground: hsl(210, 40%, 98%);
-        --color-border: hsl(222, 30%, 18%);
-        --color-input: hsl(222, 30%, 18%);
-        --color-ring: hsl(187, 85%, 53%);
-    }
+    --color-background: hsl(0, 0%, 0%);
+    --color-foreground: hsl(39, 40%, 98%);
+    --color-primary: hsl(39, 95%, 53%);
+    --color-primary-foreground: hsl(222, 47%, 6%);
+    --color-accent: hsl(39, 83%, 58%);
+    --color-muted-foreground: hsl(215, 20%, 55%);
+    --color-secondary: hsl(222, 30%, 14%);
 }
 
 @layer base {
@@ -104,64 +39,11 @@
 }
 
 @layer components {
-    .glow-primary {
-        box-shadow: 0 0 20px hsl(187, 85%, 53%) / 0.3,
-            0 0 40px hsl(187, 85%, 53%) / 0.1;
+    .theme-gradient {
+        @apply bg-gradient-to-r from-orange-300 via-amber-400 to-orange-600;
     }
 
-    .glow-accent {
-        box-shadow: 0 0 20px hsl(187, 85%, 53%) / 0.3,
-            0 0 40px hsl(187, 85%, 53%) / 0.1;
-    }
-
-    .gradient-text {
-        background: linear-gradient(135deg, hsl(187, 85%, 53%), hsl(262, 83%, 58%));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .gradient-border {
-        position: relative;
-        background: hsl(222, 47%, 8%);
-    }
-
-    .gradient-border {
-        @apply rounded-xl;
-    }
-
-    .gradient-border::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        padding: 1px;
-        border-radius: inherit;
-        background: linear-gradient(135deg, hsl(187, 85%, 53%) / 0.5, hsl(262, 83%, 58%) / 0.5);
-        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-    }
-
-    .card-hover {
-        @apply transition-all duration-300;
-    }
-
-    .card-hover:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 20px 40px hsl(222, 47%, 6%) / 0.5,
-            0 0 60px hsl(187, 85%, 53%) / 0.1;
-    }
-
-    .section-pattern {
-        background-image:
-            radial-gradient(circle at 1px 1px, hsl(222, 30%, 18%)/0.5 1px, transparent 0);
-        background-size: 40px 40px;
-    }
-}
-
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
+    .custom-gradient {
+        @apply bg-gradient-to-r from-orange-300 via-amber-400 to-orange-600 bg-clip-text text-transparent;
     }
 }

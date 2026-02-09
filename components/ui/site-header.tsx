@@ -37,6 +37,14 @@ export default function SiteHeader() {
                 </a>
               </li>
               <li>
+                <Link
+                  href="/experiment/explore"
+                  className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
+                >
+                  Explore
+                </Link>
+              </li>
+              <li>
                 <a
                   href="#Learners"
                   className="hover:text-orange-500 transition-colors cursor-pointer duration-300"

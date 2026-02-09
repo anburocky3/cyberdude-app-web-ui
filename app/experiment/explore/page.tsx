@@ -5,12 +5,14 @@ import PathsSection from "@/app/experiment/explore/components/PathsSection";
 import InterviewSection from "@/app/experiment/explore/components/InterviewSection";
 import HackathonsSection from "@/app/experiment/explore/components/HackathonsSection";
 import Footer from "@/app/experiment/explore/components/Footer";
+import SiteHeader from "@/components/ui/site-header";
 
 import '@/app/experiment/explore/style/explore.css';
 
 const Index = () => {
     return (
         <div className="min-h-screen bg-background">
+            <SiteHeader />
             <ExploreHero />
             <ExploreNavigation />
             <SkillProgramsSection />

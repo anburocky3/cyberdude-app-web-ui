@@ -88,10 +88,8 @@ const HackathonPage = () => {
         <div className="min-h-screen bg-background">
             {/* Header */}
             <div className="relative overflow-hidden">
-                <div className="absolute inset-0 section-pattern opacity-30" />
-                <div className="absolute top-0 right-1/4 w-125 h-125 bg-primary/10 rounded-full blur-3xl" />
 
-                <div className="container relative z-10 px-4 py-12">
+                <div className="container mx-auto relative z-10 px-4 py-12">
                     <Link
                         href="/"
                         className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
@@ -115,13 +113,13 @@ const HackathonPage = () => {
             </div>
 
             {/* Content */}
-            <div className="container px-4 py-12">
+            <div className="container mx-auto px-4 py-12">
                 {/* Features */}
                 <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {hackathon.features.map((feature) => (
                         <div
                             key={feature.title}
-                            className="p-8 rounded-2xl bg-card border border-border text-center"
+                            className="p-8 rounded-2xl bg-zinc-900 border border-border text-center"
                         >
                             <div className={`w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-6 border ${colorClasses[hackathon.color as keyof typeof colorClasses]}`}>
                                 <feature.icon className="w-7 h-7" />
@@ -135,7 +133,7 @@ const HackathonPage = () => {
                 <div className="grid lg:grid-cols-2 gap-12">
                     {/* Benefits */}
                     <div
-                        className="p-8 rounded-2xl bg-card border border-border"
+                        className="p-8 rounded-2xl bg-zinc-900 border border-border"
                     >
                         <h2 className="text-2xl font-semibold text-foreground mb-6">What You&apos;ll Gain</h2>
                         <div className="space-y-4">
@@ -150,7 +148,7 @@ const HackathonPage = () => {
 
                     {/* Upcoming Events */}
                     <div
-                        className="p-8 rounded-2xl bg-card border border-border"
+                        className="p-8 rounded-2xl bg-zinc-900 border border-border"
                     >
                         <h2 className="text-2xl font-semibold text-foreground mb-6">Upcoming Events</h2>
                         <div className="space-y-4">

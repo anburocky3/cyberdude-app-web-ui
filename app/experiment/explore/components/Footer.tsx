@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <section className="py-24 relative">
+        <section className="pb-24 py-5 relative">
             <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent" />
-            <div className="container relative z-10 px-4 text-center">
+            <div className="container mx-auto relative z-10 px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                     Ready to Start Your Journey?
                 </h2>
@@ -11,7 +11,7 @@ const Footer = () => {
                 </p>
                 <a
                     href="#skill-programs"
-                    className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all glow-primary text-lg"
+                    className="inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-orange-300  to-orange-500 text-black hover:from-orange-400 hover:to-orange-500 transition-all duration-300 rounded-full font-semibold"
                 >
                     Get Started Now
                 </a>

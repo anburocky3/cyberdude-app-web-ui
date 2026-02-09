@@ -13,7 +13,7 @@ const programs = [
             "Understand real-world application flow",
             "End-to-end development skills",
         ],
-        href: "/experiment/explore/pages/program/fullstack",
+        href: "/experiment/explore/pages/program/:fullstack",
         color: "primary" as const,
     },
     {
@@ -26,7 +26,7 @@ const programs = [
             "Responsive design mastery",
             "Visual problem-solving skills",
         ],
-        href: "/experiment/explore/pages/program/frontend",
+        href: "/experiment/explore/pages/program/:frontend",
         color: "accent" as const,
     },
     {
@@ -39,7 +39,7 @@ const programs = [
             "Manage security and auth",
             "Database design & optimization",
         ],
-        href: "/experiment/explore/pages/program/backend",
+        href: "/experiment/explore/pages/program/:backend",
         color: "success" as const,
     },
 ];
@@ -47,9 +47,8 @@ const programs = [
 const SkillProgramsSection = () => {
     return (
         <section id="skill-programs" className="py-24 relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/30 to-transparent" />
 
-            <div className="container relative z-10 px-4">
+            <div className="container mx-auto relative z-10 px-4">
                 <SectionHeader
                     icon={BookOpen}
                     label="Structured Learning"
@@ -63,7 +62,7 @@ const SkillProgramsSection = () => {
                     ))}
                 </div>
 
-                <div className="mt-16 p-8 rounded-2xl bg-surface-2 border border-border text-center">
+                <div className="mt-16 p-8 rounded-2xl bg-zinc-950 border border-border text-center">
                     <h3 className="text-xl font-semibold text-foreground mb-3">What to Expect</h3>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                         {[
@@ -72,7 +71,7 @@ const SkillProgramsSection = () => {
                             { label: "Progress Tracking", desc: "Based on completion" },
                             { label: "Strong Fundamentals", desc: "Build confidence" },
                         ].map((item) => (
-                            <div key={item.label} className="p-4 rounded-lg bg-card border border-border">
+                            <div key={item.label} className="p-4 rounded-lg bg-zinc-900 border border-border">
                                 <div className="text-foreground font-medium mb-1">{item.label}</div>
                                 <div className="text-sm text-muted-foreground">{item.desc}</div>
                             </div>

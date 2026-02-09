@@ -7,29 +7,26 @@ const paths = [
         title: "Full Stack Path",
         description: "See how frontend and backend skills grow together",
         stages: ["Foundation", "Frontend Core", "Backend Core", "Integration", "Full Application"],
-        href: "/experiment/explore/pages/path/fullstack",
-        gradient: "from-primary to-accent",
+        href: "/experiment/explore/pages/path/:fullstack",
     },
     {
         title: "Frontend Path",
         description: "From basic UI to structured interface development",
         stages: ["Layout Basics", "Styling & Responsive", "Interactive Behavior", "Component Thinking"],
-        href: "/experiment/explore/pages/path/frontend",
-        gradient: "from-accent to-primary",
+        href: "/experiment/explore/pages/path/:frontend",
     },
     {
         title: "Backend Path",
         description: "Build reliable and scalable server-side systems",
         stages: ["Core Logic", "Data Handling", "APIs", "Performance"],
-        href: "/experiment/explore/pages/path/backend",
-        gradient: "from-success to-primary",
+        href: "/experiment/explore/pages/path/:backend",
     },
 ];
 
 const PathsSection = () => {
     return (
-        <section id="paths" className="py-24 relative">
-            <div className="container relative z-10 px-4">
+        <section id="paths" className="py-5 pb-24 relative">
+            <div className="container mx-auto relative z-10 px-4">
                 <SectionHeader
                     icon={Route}
                     label="Know Your Journey"
@@ -44,14 +41,14 @@ const PathsSection = () => {
                         >
                             <Link
                                 href={path.href}
-                                className="block gradient-border card-hover group"
+                                className="block group"
                             >
-                                <div className="p-8 bg-card rounded-lg">
+                                <div className="p-8 bg-zinc-950/90 rounded-lg border border-border transition duration-300 hover:-translate-y-0.75">
                                     <div className="flex flex-col lg:flex-row lg:items-center gap-8">
                                         <div className="lg:w-1/3">
                                             <h3 className="text-2xl font-semibold text-foreground mb-2">{path.title}</h3>
                                             <p className="text-muted-foreground mb-4">{path.description}</p>
-                                            <div className="flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
+                                            <div className="flex items-center gap-2 text-orange-500 font-medium group-hover:gap-3 transition-all">
                                                 View Full Path
                                                 <ArrowRight className="w-4 h-4" />
                                             </div>
@@ -61,12 +58,12 @@ const PathsSection = () => {
                                             <div className="flex flex-wrap items-center gap-3">
                                                 {path.stages.map((stage, i) => (
                                                     <div key={stage} className="flex items-center gap-3">
-                                                        <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary border border-border">
-                                                            <CheckCircle2 className="w-4 h-4 text-primary" />
+                                                        <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 border border-border">
+                                                            <CheckCircle2 className="w-4 h-4 text-orange-500" />
                                                             <span className="text-sm text-foreground whitespace-nowrap">{stage}</span>
                                                         </div>
                                                         {i < path.stages.length - 1 && (
-                                                            <div className={`w-8 h-0.5 bg-gradient-to-r ${path.gradient} hidden sm:block`} />
+                                                            <div className={`w-8 h-0.5 bg-gradient-to-r from-orange-300 via-amber-400 to-orange-600 hidden sm:block`} />
                                                         )}
                                                     </div>
                                                 ))}
