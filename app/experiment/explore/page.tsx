@@ -7,21 +7,23 @@ import HackathonsSection from "@/app/experiment/explore/components/HackathonsSec
 import Footer from "@/app/experiment/explore/components/Footer";
 import SiteHeader from "@/components/ui/site-header";
 
-import '@/app/experiment/explore/style/explore.css';
+import "@/app/experiment/explore/style/explore.css";
+import SiteFooter from "@/components/ui/site-footer";
 
 const Index = () => {
-    return (
-        <div className="min-h-screen bg-background">
-            <SiteHeader />
-            <ExploreHero />
-            <ExploreNavigation />
-            <SkillProgramsSection />
-            <PathsSection />
-            <InterviewSection />
-            <HackathonsSection />
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="min-h-screen bg-background">
+      <SiteHeader />
+      <ExploreHero />
+      <ExploreNavigation />
+      <SkillProgramsSection />
+      <PathsSection />
+      <InterviewSection />
+      <HackathonsSection />
+      <Footer />
+      <SiteFooter />
+    </div>
+  );
 };
 
 export default Index;
