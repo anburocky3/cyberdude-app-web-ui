@@ -8,21 +8,21 @@ const interviewPrograms = [
         title: "Technical Interview Prep",
         description: "Practice common technical questions and step-by-step explanations.",
         features: ["Problem breakdown", "Clear explanations", "Pattern recognition"],
-        href: "/experiment/explore/pages/interview/:technical",
+        href: "/experiment/explore/interview/technical",
     },
     {
         icon: MessageSquare,
         title: "Mock Interviews",
         description: "Simulate real interview scenarios with time pressure.",
         features: ["Answering under pressure", "Handling follow-ups", "Building confidence"],
-        href: "/experiment/explore/pages/interview/:mock",
+        href: "/experiment/explore/interview/mock",
     },
     {
         icon: FileText,
         title: "Resume & Projects",
         description: "Learn to present your work and justify your choices.",
         features: ["Project explanations", "Technical decisions", "Learning experiences"],
-        href: "/experiment/explore/pages/interview/:resume",
+        href: "/experiment/explore/interview/resume",
     },
 ];
 

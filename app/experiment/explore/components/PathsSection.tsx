@@ -7,19 +7,19 @@ const paths = [
         title: "Full Stack Path",
         description: "See how frontend and backend skills grow together",
         stages: ["Foundation", "Frontend Core", "Backend Core", "Integration", "Full Application"],
-        href: "/experiment/explore/pages/path/:fullstack",
+        href: "/experiment/explore/path/fullstack",
     },
     {
         title: "Frontend Path",
         description: "From basic UI to structured interface development",
         stages: ["Layout Basics", "Styling & Responsive", "Interactive Behavior", "Component Thinking"],
-        href: "/experiment/explore/pages/path/:frontend",
+        href: "/experiment/explore/path/frontend",
     },
     {
         title: "Backend Path",
         description: "Build reliable and scalable server-side systems",
         stages: ["Core Logic", "Data Handling", "APIs", "Performance"],
-        href: "/experiment/explore/pages/path/:backend",
+        href: "/experiment/explore/path/backend",
     },
 ];
 

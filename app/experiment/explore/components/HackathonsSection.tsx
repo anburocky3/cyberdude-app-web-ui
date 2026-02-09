@@ -8,21 +8,21 @@ const hackathonTypes = [
         title: "Beginner Hackathons",
         description: "Simple problem statements with guidance. Perfect for first-timers.",
         color: "primary",
-        href: "/experiment/explore/pages/hackathon/:beginner",
+        href: "/experiment/explore/hackathon/beginner",
     },
     {
         icon: Users2,
         title: "Team Hackathons",
         description: "Collaborate, divide responsibilities, and communicate like real teams.",
         color: "accent",
-        href: "/experiment/explore/pages/hackathon/:team",
+        href: "/experiment/explore/hackathon/team",
     },
     {
         icon: Trophy,
         title: "Challenge Hackathons",
         description: "Solve real problems under time pressure. Push your limits.",
         color: "warning",
-        href: "/experiment/explore/pages/hackathon/:challenge",
+        href: "/experiment/explore/hackathon/challenge",
     },
 ];
 
