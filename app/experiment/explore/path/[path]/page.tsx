@@ -117,7 +117,7 @@ const SkillPathDetail = async ({
     const pathDatum = pathsData[path as keyof typeof pathsData];
 
     return (
-        <div>
+        <div className="min-h-screen bg-background">
             <SiteHeader />
             <div className="min-h-screen bg-background">
                 {/* Header */}

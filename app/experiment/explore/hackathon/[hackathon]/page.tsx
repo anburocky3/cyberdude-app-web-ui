@@ -91,7 +91,7 @@ const HackathonPage = async ({
     };
 
     return (
-        <div>
+        <div className="min-h-screen bg-background">
             <SiteHeader />
             <div className="min-h-screen bg-background">
                 {/* Header */}

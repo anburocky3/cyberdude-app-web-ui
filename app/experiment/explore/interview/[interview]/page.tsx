@@ -88,7 +88,7 @@ const InterviewPage = async ({
     const Icon = interviewDatum.icon;
 
     return (
-        <div>
+        <div className="min-h-screen bg-background">
             <SiteHeader />
             <div className="min-h-screen bg-background">
                 {/* Header */}
