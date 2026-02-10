@@ -26,7 +26,7 @@ export default function SiteHeader() {
         <div className="flex gap-3 items-center justify-between">
           {/* desktop navigation links */}
           <div className="desktop-links">
-            <ul className="flex flex-col md:flex-row gap-10 items-start md:items-center justify-center">
+            <ul className="flex flex-col md:flex-row gap-10 items-start md:items-center text-white justify-center">
               <li>
                 <a
                   href="#Company"
