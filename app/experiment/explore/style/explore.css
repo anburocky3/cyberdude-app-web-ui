@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    /* custom fonts */
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-jetbrains: 'JetBrains Mono', monospace;
+
+    /* custom colors */
+    --color-border: hsl(222, 30%, 18%);
+    --color-background: hsl(0, 0%, 0%);
+    --color-foreground: hsl(39, 40%, 98%);
+    --color-primary: hsl(39, 95%, 53%);
+    --color-primary-foreground: hsl(222, 47%, 6%);
+    --color-accent: hsl(39, 83%, 58%);
+    --color-muted-foreground: hsl(215, 20%, 55%);
+    --color-secondary: hsl(222, 30%, 14%);
+}
+
+@layer base {
+    body {
+        @apply bg-background text-foreground antialiased font-inter;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-semibold tracking-tight;
+    }
+
+    code,
+    pre {
+        @apply font-jetbrains;
+    }
+}
+
+@layer components {
+    .theme-gradient {
+        @apply bg-gradient-to-r from-orange-300 via-amber-400 to-orange-600;
+    }
+
+    .custom-gradient {
+        @apply bg-gradient-to-r from-orange-300 via-amber-400 to-orange-600 bg-clip-text text-transparent;
+    }
+}

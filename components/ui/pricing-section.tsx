@@ -128,12 +128,12 @@ const PricingSection = () => {
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-card/50 backdrop-blur-sm">
+              <div className="p-6 rounded-xl bg-card/50 backdrop-blur-sm hover:text-orange-500  transition-colors cursor-pointer">
                 <Shield className="w-10 h-10 text-primary mx-auto mb-4" />
                 <h4 className="font-display font-semibold mb-2 text-foreground">
                   No Risk
                 </h4>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground ">
                   Start free, upgrade when ready. No hidden fees.
                 </p>
               </div>
@@ -146,8 +146,8 @@ const PricingSection = () => {
                   95% of Pro learners land jobs within 6 months.
                 </p>
               </div>
-              <div className="p-6 rounded-xl bg-card/50 backdrop-blur-sm">
-                <Users className="w-10 h-10 text-cyber-purple mx-auto mb-4" />
+              <div className="p-6 rounded-xl bg-card/50 backdrop-blur-sm group ">
+                <Users className="w-10 h-10 text-cyber-purple mx-auto mb-4 " />
                 <h4 className="font-display font-semibold mb-2 text-foreground">
                   Community
                 </h4>
