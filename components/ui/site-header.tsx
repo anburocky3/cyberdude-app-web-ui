@@ -26,7 +26,7 @@ export default function SiteHeader() {
         <div className="flex gap-3 items-center justify-between">
           {/* desktop navigation links */}
           <div className="desktop-links">
-            <ul className="flex flex-col md:flex-row gap-10 items-start md:items-center justify-center">
+            <ul className="flex flex-col md:flex-row gap-10 items-start md:items-center text-white justify-center">
               <li>
                 <a
                   href="#Company"
@@ -35,6 +35,14 @@ export default function SiteHeader() {
                   <span className="ml-1">Company</span>
                   <ChevronDown />
                 </a>
+              </li>
+              <li>
+                <Link
+                  href="/explore"
+                  className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
+                >
+                  Explore
+                </Link>
               </li>
               <li>
                 <a

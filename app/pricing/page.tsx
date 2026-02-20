@@ -1,5 +1,3 @@
-"use client";
-
 // import Navbar from "@/app/experiment/pricing/Navbar";
 import PricingSection from "@/components/ui/pricing-section";
 import SiteHeader from "@/components/ui/site-header";
