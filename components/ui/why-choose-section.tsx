@@ -1,8 +1,8 @@
 import whyChooseData from "@/data/whyChooseData";
 
-export default function WhyChooseSection() {
+export default function WhyChooseSection({ className = "" }) {
   return (
-    <section className="relative">
+    <section className={`relative ${className}`}>
       <div className="container mx-auto py-16 px-4">
         <h2 className="text-center text-4xl font-semibold mb-16">
           Why choose <span className="custom-gradient">Cyberdude</span>?
