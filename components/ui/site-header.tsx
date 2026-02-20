@@ -38,7 +38,7 @@ export default function SiteHeader() {
               </li>
               <li>
                 <Link
-                  href="/experiment/explore"
+                  href="/explore"
                   className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
                 >
                   Explore
