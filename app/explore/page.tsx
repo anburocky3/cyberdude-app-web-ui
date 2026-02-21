@@ -1,18 +1,17 @@
-import ExploreHero from "@/app/experiment/explore/components/ExploreHero";
-import ExploreNavigation from "@/app/experiment/explore/components/ExploreNavigation";
-import SkillProgramsSection from "@/app/experiment/explore/components/SkillProgramsSection";
-import PathsSection from "@/app/experiment/explore/components/PathsSection";
-import InterviewSection from "@/app/experiment/explore/components/InterviewSection";
-import HackathonsSection from "@/app/experiment/explore/components/HackathonsSection";
+import ExploreHero from "@/components/ui/ExploreHero";
+import ExploreNavigation from "@/components/ui/ExploreNavigation";
+import SkillProgramsSection from "@/components/ui/SkillProgramsSection";
+import PathsSection from "@/components/ui/PathsSection";
+import InterviewSection from "@/components/ui/InterviewSection";
+import HackathonsSection from "@/components/ui/HackathonsSection";
+import CTASection from "@/components/ui/cta-section";
+
 import SiteHeader from "@/components/ui/site-header";
 import SiteFooter from "@/components/ui/site-footer";
 
-// import "@/app/experiment/explore/style/explore.css";
-import CTASection from "@/components/ui/cta-section";
-
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
       <ExploreHero />
       <ExploreNavigation />

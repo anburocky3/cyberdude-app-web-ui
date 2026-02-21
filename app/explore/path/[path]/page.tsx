@@ -127,7 +127,7 @@ const SkillPathDetail = async ({
 
                     <div className="container mx-auto relative z-10 px-4 py-12">
                         <Link
-                            href="/experiment/explore"
+                            href="/explore"
                             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
                         >
                             <ArrowLeft className="w-4 h-4" />

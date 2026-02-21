@@ -7,19 +7,19 @@ const paths = [
         title: "Full Stack Path",
         description: "See how frontend and backend skills grow together",
         stages: ["Foundation", "Frontend Core", "Backend Core", "Integration", "Full Application"],
-        href: "/experiment/explore/path/fullstack",
+        href: "/explore/path/fullstack",
     },
     {
         title: "Frontend Path",
         description: "From basic UI to structured interface development",
         stages: ["Layout Basics", "Styling & Responsive", "Interactive Behavior", "Component Thinking"],
-        href: "/experiment/explore/path/frontend",
+        href: "/explore/path/frontend",
     },
     {
         title: "Backend Path",
         description: "Build reliable and scalable server-side systems",
         stages: ["Core Logic", "Data Handling", "APIs", "Performance"],
-        href: "/experiment/explore/path/backend",
+        href: "/explore/path/backend",
     },
 ];
 
@@ -63,7 +63,7 @@ const PathsSection = () => {
                                                             <span className="text-sm text-foreground whitespace-nowrap">{stage}</span>
                                                         </div>
                                                         {i < path.stages.length - 1 && (
-                                                            <div className={`w-8 h-0.5 bg-gradient-to-r from-orange-300 via-amber-400 to-orange-600 hidden sm:block`} />
+                                                            <div className={`w-8 h-0.5 bg-linear-to-r from-orange-300 via-amber-400 to-orange-600 hidden sm:block`} />
                                                         )}
                                                     </div>
                                                 ))}
