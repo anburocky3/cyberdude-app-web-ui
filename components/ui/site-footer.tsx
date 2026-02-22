@@ -1,21 +1,48 @@
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Icon, Instagram, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
 
 const aboutLinks = [
   {
     id: 1,
     navName: "Company",
-    navLink: "/"
+    navLink: "/",
   },
   {
     id: 2,
     navName: "Location",
-    navLink: "/"
+    navLink: "/",
   },
   {
     id: 3,
-    navName: "Contact feedback",
-    navLink: "/experiment/contact"
+    navName: "Contact Us",
+    navLink: "/contact",
+  },
+];
+
+const socialLinks = [
+  {
+    id: 1,
+    name: "Facebook",
+    link: "https://www.facebook.com/cdudenetworks",
+    icon: Facebook,
+  },
+  {
+    id: 2,
+    name: "Instagram",
+    link: "https://www.instagram.com/cdudenetworks",
+    icon: Instagram,
+  },
+  {
+    id: 3,
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/company/cyberdude-networks",
+    icon: Linkedin,
+  },
+  {
+    id: 4,
+    name: "YouTube",
+    link: "https://www.youtube.com/@cyberdudenetworks",
+    icon: Youtube,
   },
 ];
 
@@ -25,7 +52,7 @@ export default function SiteFooter() {
       <div className="mx-auto">
         <div className="mx-auto max-w-7xl px-6 py-16">
           {/* Main Footer Content */}
-          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 ">
+          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5 ">
             {/* Brand */}
             <div className="col-span-2">
               <div className="mb-5 w-44">
@@ -93,24 +120,22 @@ export default function SiteFooter() {
                 ))}
               </ul>
             </div>
-
-            {/* Social */}
-            <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-                Social
-              </h3>
-              <div className="flex gap-4">
-                {[Facebook, Instagram, Linkedin, Youtube].map((Icon, i) => (
-                  <Link
-                    key={i}
-                    href="/"
-                    aria-label="social link"
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-700 transition hover:border-orange-500 hover:text-orange-500"
-                  >
-                    <Icon size={18} />
-                  </Link>
-                ))}
-              </div>
+          </div>
+          {/* Social */}
+          <div className="text-center flex justify-start sm:justify-end mt-5 sm:mt-0">
+            <div className="flex gap-4">
+              {socialLinks.map((item) => (
+                <a
+                  key={item.id}
+                  href={item.link}
+                  aria-label={item.name}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-700 transition hover:border-orange-500 hover:text-orange-500"
+                  target="_blank"
+                  title={`Check out cyberdude ${item.name}`}
+                >
+                  <item.icon size={18} />
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -118,7 +143,17 @@ export default function SiteFooter() {
         {/* Bottom Footer */}
         <div className="border-t border-gray-800">
           <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-4 text-sm sm:flex-row sm:items-center sm:justify-between">
-            <p>© 2026 CyberDude Networks Pvt. Ltd. All Rights Reserved.</p>
+            <p>
+              © 2026{" "}
+              <a
+                href="https://cyberdudenetworks.com"
+                className="hover:text-orange-500"
+                target="_blank"
+              >
+                CyberDude Networks Pvt. Ltd.
+              </a>{" "}
+              All Rights Reserved.
+            </p>
 
             <div className="flex gap-6">
               {["Terms", "Privacy", "Compliances"].map((item) => (
