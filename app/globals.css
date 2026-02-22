@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @import "tailwindcss";
 
@@ -10,10 +10,21 @@
   --color-mute: hsl(0, 1%, 49%);
   --color-background: hsl(0, 0%, 0%);
 
+  /* other section colours */
+  --color-border: hsl(222, 30%, 18%);
+  --color-background: hsl(0, 0%, 0%);
+  --color-foreground: hsl(39, 40%, 98%);
+  --color-primary: hsl(39, 95%, 53%);
+  --color-primary-foreground: hsl(222, 47%, 6%);
+  --color-accent: hsl(39, 83%, 58%);
+  --color-muted-foreground: hsl(215, 20%, 55%);
+  --color-secondary: hsl(222, 30%, 14%);
+
   --breakpoint-xs: 450px;
   --breakpoint-md: 780px;
 
   --font-inter: "Inter", sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
 
   --animate-fadeSlideIn: fadeSlideIn 0.5s ease-out forwards;
 
@@ -22,6 +33,7 @@
       opacity: 0;
       transform: translateY(12px);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0);
@@ -30,6 +42,7 @@
 }
 
 @layer components {
+
   /* Navigation */
   .desktop-links {
     @apply hidden items-center justify-center md:flex;
@@ -79,9 +92,15 @@
   h6 {
     @apply font-semibold tracking-tight;
   }
+
+  code,
+  pre {
+    @apply font-jetbrains;
+  }
 }
 
 @layer components {
+
   /* ---------- Glow Text ---------- */
   .glow-text {
     text-shadow:
@@ -131,12 +150,10 @@
     content: "";
     position: absolute;
     inset: -1px;
-    background: linear-gradient(
-      135deg,
-      hsl(190 100% 50% / 0.6),
-      transparent,
-      hsl(280 100% 60% / 0.6)
-    );
+    background: linear-gradient(135deg,
+        hsl(190 100% 50% / 0.6),
+        transparent,
+        hsl(280 100% 60% / 0.6));
     z-index: -1;
     border-radius: inherit;
   }

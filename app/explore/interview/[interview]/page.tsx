@@ -97,7 +97,7 @@ const InterviewPage = async ({
 
                     <div className="container mx-auto relative z-10 px-4 py-12">
                         <Link
-                            href="/experiment/explore"
+                            href="/explore"
                             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
                         >
                             <ArrowLeft className="w-4 h-4" />
@@ -147,7 +147,7 @@ const InterviewPage = async ({
 
                     {/* CTA */}
                     <div
-                        className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-orange-500/5 via-primary/5 to-orange-500/5 border border-border text-center"
+                        className="mt-16 p-8 rounded-2xl bg-linear-to-r from-orange-500/5 via-primary/5 to-orange-500/5 border border-border text-center"
                     >
                         <h2 className="text-2xl font-semibold text-foreground mb-4">Ready to Practice?</h2>
                         <p className="text-muted-foreground mb-6 max-w-xl mx-auto">

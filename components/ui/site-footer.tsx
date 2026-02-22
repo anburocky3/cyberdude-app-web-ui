@@ -1,4 +1,23 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import Link from "next/link";
+
+const aboutLinks = [
+  {
+    id: 1,
+    navName: "Company",
+    navLink: "/"
+  },
+  {
+    id: 2,
+    navName: "Location",
+    navLink: "/"
+  },
+  {
+    id: 3,
+    navName: "Contact feedback",
+    navLink: "/experiment/contact"
+  },
+];
 
 export default function SiteFooter() {
   return (
@@ -28,14 +47,14 @@ export default function SiteFooter() {
                 About
               </h3>
               <ul className="space-y-2 text-sm">
-                {["Company", "Location", "Contact feedback"].map((item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
+                {aboutLinks.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      href={item.navLink}
                       className="inline-block transition hover:text-orange-500 hover:translate-x-1"
                     >
-                      {item}
-                    </a>
+                      {item.navName}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -47,12 +66,12 @@ export default function SiteFooter() {
               <ul className="space-y-2 text-sm">
                 {["Courses", "Course Roadmaps", "Projects"].map((item) => (
                   <li key={item}>
-                    <a
-                      href="#"
+                    <Link
+                      href="/"
                       className="inline-block transition hover:text-orange-500 hover:translate-x-1"
                     >
                       {item}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -64,12 +83,12 @@ export default function SiteFooter() {
               <ul className="space-y-2 text-sm">
                 {["People", "sessions", "Testimonials"].map((item) => (
                   <li key={item}>
-                    <a
-                      href="#"
+                    <Link
+                      href="/"
                       className="inline-block transition hover:text-orange-500 hover:translate-x-1"
                     >
                       {item}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -82,14 +101,14 @@ export default function SiteFooter() {
               </h3>
               <div className="flex gap-4">
                 {[Facebook, Instagram, Linkedin, Youtube].map((Icon, i) => (
-                  <a
+                  <Link
                     key={i}
-                    href="#"
+                    href="/"
                     aria-label="social link"
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-700 transition hover:border-orange-500 hover:text-orange-500"
                   >
                     <Icon size={18} />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -103,13 +122,13 @@ export default function SiteFooter() {
 
             <div className="flex gap-6">
               {["Terms", "Privacy", "Compliances"].map((item) => (
-                <a
+                <Link
                   key={item}
-                  href="#"
+                  href="/"
                   className="transition hover:text-orange-500"
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

@@ -14,7 +14,7 @@ const programs = [
             "Understand real-world application flow",
             "End-to-end development skills",
         ],
-        href: "/experiment/explore/program/fullstack",
+        href: "/explore/program/fullstack",
         color: "primary" as const,
     },
     {
@@ -28,7 +28,7 @@ const programs = [
             "Responsive design mastery",
             "Visual problem-solving skills",
         ],
-        href: "/experiment/explore/program/frontend",
+        href: "/explore/program/frontend",
         color: "accent" as const,
     },
     {
@@ -42,7 +42,7 @@ const programs = [
             "Manage security and auth",
             "Database design & optimization",
         ],
-        href: "/experiment/explore/program/backend",
+        href: "/explore/program/backend",
         color: "success" as const,
     },
 ];
