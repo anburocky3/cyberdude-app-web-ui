@@ -10,7 +10,7 @@ import Footer from "@/app/experiment/pricing/Footer";
 
 const Index = () => {
     return (
-        <div className="min-h-screen bg-background scanline">
+        <div className="min-h-screen bg-background">
             {/* <Navbar /> */}
             <main>
                 {/* <HeroSection /> */}

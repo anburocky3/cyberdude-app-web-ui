@@ -118,7 +118,7 @@ const PricingSection = () => {
         </div>
 
         {/* Trust Section */}
-        <div className="p-8 md:p-12 rounded-2xl bg-linear-to-r from-primary/10 via-cyber-purple/10 to-cyber-pink/10 border border-primary/20">
+        <div className="p-8 md:p-12 rounded-2xl border border-primary/20 scanline">
           <div className="text-center max-w-3xl mx-auto">
             <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
               Why Choose <span className="custom-gradient">CyberDude</span>?
