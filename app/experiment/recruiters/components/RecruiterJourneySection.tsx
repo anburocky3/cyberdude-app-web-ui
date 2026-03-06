@@ -10,7 +10,7 @@ const steps = [
 
 const RecruiterJourneySection = () => {
   return (
-    <section className="py-24 px-6 md:px-12 bg-orange-500/50">
+    <section className="py-24 px-6 md:px-12 bg-zinc-950/30">
       <div className="max-w-5xl mx-auto">
         <p className="text-orange-500 text-xs font-semibold tracking-[0.3em] uppercase mb-4">
           The Journey

@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 md:px-12 overflow-hidden">
       <div className="absolute inset-0 bg-linear-to-br from-orange-500/4 via-transparent to-transparent" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full bg-orange-500/5 blur-[120px]" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 rounded-full bg-orange-500/3 blur-[120px]" />
 
       <div className="relative max-w-3xl mx-auto text-center">
         <p className="text-orange-500 text-xs font-semibold tracking-[0.3em] uppercase mb-8">
