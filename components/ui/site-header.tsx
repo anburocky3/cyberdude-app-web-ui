@@ -15,26 +15,34 @@ export default function SiteHeader() {
     <header className="w-full">
       <div className="container mx-auto py-5 flex justify-between items-center px-3">
         {/* company logo */}
-        <div className="w-45 h-10">
+        <Link href={"/"} className="w-45 h-10">
           <img
             src="/img/logo.svg"
             className="w-full h-full object-contain"
             alt="CyberDude Networks Logo"
           />
-        </div>
+        </Link>
 
         <div className="flex gap-3 items-center justify-between">
           {/* desktop navigation links */}
           <div className="desktop-links">
-            <ul className="flex flex-col md:flex-row gap-10 items-start md:items-center justify-center">
+            <ul className="flex flex-col md:flex-row gap-10 items-start md:items-center text-white justify-center">
               <li>
                 <a
                   href="#Company"
                   className="hover:text-orange-500 transition-colors cursor-pointer duration-300 flex"
                 >
-                  <ChevronDown />
                   <span className="ml-1">Company</span>
+                  <ChevronDown />
                 </a>
+              </li>
+              <li>
+                <Link
+                  href="/explore"
+                  className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
+                >
+                  Explore
+                </Link>
               </li>
               <li>
                 <a
@@ -86,10 +94,10 @@ export default function SiteHeader() {
                 <li>
                   <a
                     href="#Company"
-                    className="hover:text-orange-500 transition-colors cursor-pointer duration-300 flex"
+                    className="hover:text-orange-500 transition-colors cursor-pointer duration-300 flex items-center"
                   >
+                    <span className="mr-1">Company</span>
                     <ChevronDown />
-                    <span className="ml-1">Company</span>
                   </a>
                 </li>
                 <li>
