@@ -54,11 +54,11 @@ export default function SiteHeader() {
               </li>
               <li>
                 <Link
-                    href="/pricing"
-                    className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
-                  >
-                    pricing
-                  </Link>
+                  href="/pricing"
+                  className="hover:text-orange-500 transition-colors cursor-pointer duration-300"
+                >
+                  Pricing
+                </Link>
               </li>
             </ul>
           </div>

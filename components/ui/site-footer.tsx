@@ -1,5 +1,20 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
+const legalLinks = [
+  {
+    name: "Terms",
+    href: "/legal/terms",
+  },
+  {
+    name: "Privacy",
+    href: "/legal/privacy",
+  },
+  {
+    name: "Refund & Cancellation Policy",
+    href: "/legal/refund-cancellation",
+  },
+];
+
 export default function SiteFooter() {
   return (
     <footer className="bg-black text-gray-400">
@@ -102,13 +117,13 @@ export default function SiteFooter() {
             <p>© 2026 CyberDude Networks Pvt. Ltd. All Rights Reserved.</p>
 
             <div className="flex gap-6">
-              {["Terms", "Privacy", "Compliances"].map((item) => (
+              {legalLinks.map(({ name, href }) => (
                 <a
-                  key={item}
-                  href="#"
+                  key={name}
+                  href={href}
                   className="transition hover:text-orange-500"
                 >
-                  {item}
+                  {name}
                 </a>
               ))}
             </div>

@@ -1,16 +1,15 @@
-const TermsContent = [
+const TermsContentData = [
   {
     id: "1",
     title: "Acceptance of Terms",
-    content: [
-      "By accessing or using cyberdude.app, you confirm that:",
-    ],
+    content: ["By accessing or using cyberdude.app, you confirm that:"],
     bullets: [
       "You are at least 18 years old (or using the platform under authorized guardian supervision).",
       "You agree to comply with all applicable laws and regulations.",
       "You understand that cyberdude.app is designed to transform beginners into skilled professionals through structured, performance-driven, and evidence-based learning methodologies.",
     ],
-    after: "These Terms may be updated periodically. Continued use of the platform after updates constitutes acceptance of the revised Terms.",
+    after:
+      "These Terms may be updated periodically. Continued use of the platform after updates constitutes acceptance of the revised Terms.",
   },
   {
     id: "2",
@@ -18,13 +17,15 @@ const TermsContent = [
     subsections: [
       {
         subtitle: "2.1 Account Responsibility",
-        content: "Users must provide accurate and complete information during registration. You are responsible for:",
+        content:
+          "Users must provide accurate and complete information during registration. You are responsible for:",
         bullets: [
           "Maintaining the confidentiality of your login credentials",
           "All activities conducted under your account",
           "Promptly notifying us of unauthorized access",
         ],
-        after: "cyberdude.app reserves the right to suspend or terminate accounts that provide false information or violate platform policies.",
+        after:
+          "cyberdude.app reserves the right to suspend or terminate accounts that provide false information or violate platform policies.",
       },
     ],
   },
@@ -43,7 +44,8 @@ const TermsContent = [
           "Random attention checks",
           "Timed quizzes or checkpoints",
         ],
-        after: "Failure to respond may result in session pauses or progress tracking adjustments.",
+        after:
+          "Failure to respond may result in session pauses or progress tracking adjustments.",
       },
       {
         subtitle: "3.2 AI-Based Proctoring",
@@ -53,7 +55,8 @@ const TermsContent = [
           "Browser lockdown mechanisms may restrict opening new tabs, applications, or screen switching",
           "Screen activity may be monitored for integrity purposes",
         ],
-        after: "By participating in such modules, you explicitly consent to this monitoring.",
+        after:
+          "By participating in such modules, you explicitly consent to this monitoring.",
       },
       {
         subtitle: "3.3 Sequential Learning Enforcement",
@@ -63,14 +66,17 @@ const TermsContent = [
           "Skipping ahead is restricted",
           "Unlocking of advanced modules depends on prior completion",
         ],
-        after: "This ensures genuine competency development rather than superficial course completion.",
+        after:
+          "This ensures genuine competency development rather than superficial course completion.",
       },
     ],
   },
   {
     id: "4",
     title: "Skill DNA & Verified Learning Profile",
-    content: ["cyberdude.app uses data-driven analytics to measure real skill growth."],
+    content: [
+      "cyberdude.app uses data-driven analytics to measure real skill growth.",
+    ],
     subsections: [
       {
         subtitle: "4.1 Behavioral & Cognitive Metrics",
@@ -93,7 +99,8 @@ const TermsContent = [
           "Verified project portfolio",
           "Performance insights",
         ],
-        after: "may be shared with verified recruiters. You may opt-out at any time through account settings.",
+        after:
+          "may be shared with verified recruiters. You may opt-out at any time through account settings.",
       },
       {
         subtitle: "4.3 Dynamic Certifications & Badges",
@@ -103,7 +110,8 @@ const TermsContent = [
           "Reflect real performance metrics",
           "Are performance-backed, not attendance-based",
         ],
-        after: "cyberdude.app reserves the right to revoke certifications in cases of academic dishonesty.",
+        after:
+          "cyberdude.app reserves the right to revoke certifications in cases of academic dishonesty.",
       },
     ],
   },
@@ -129,7 +137,8 @@ const TermsContent = [
           "Avoid harassment, spam, or offensive language",
           "Contribute constructively to forums",
         ],
-        after: "The platform tracks a Collaboration Index based on interaction quality. Repeated violations may result in account restrictions.",
+        after:
+          "The platform tracks a Collaboration Index based on interaction quality. Repeated violations may result in account restrictions.",
       },
     ],
   },
@@ -155,7 +164,8 @@ const TermsContent = [
           "Employee/student performance monitoring",
           "Completion insights",
         ],
-        after: "Organizations are responsible for proper internal use of such data.",
+        after:
+          "Organizations are responsible for proper internal use of such data.",
       },
     ],
   },
@@ -165,14 +175,19 @@ const TermsContent = [
     subsections: [
       {
         subtitle: "7.1 Payment Processing",
-        content: "Payments are securely processed via third-party gateways such as:",
+        content:
+          "Payments are securely processed via third-party gateways such as:",
         bullets: ["RazorPay", "Paytm", "Other integrated providers"],
         after: "cyberdude.app does not store full payment card details.",
       },
       {
         subtitle: "7.2 Access Conditions",
         content: "Access to:",
-        bullets: ["Premium modules", "Advanced certifications", "Recruitment pipelines"],
+        bullets: [
+          "Premium modules",
+          "Advanced certifications",
+          "Recruitment pipelines",
+        ],
         after: "may depend on successful payment.",
       },
       {
@@ -183,20 +198,24 @@ const TermsContent = [
           "May be denied after significant course progress is completed",
           "Will not apply in cases of policy violations",
         ],
-        after: "Specific refund terms will be outlined at the time of purchase.",
+        after:
+          "Specific refund terms will be outlined at the time of purchase.",
       },
     ],
   },
   {
     id: "8",
     title: "Limitation of Liability",
-    content: ["cyberdude.app aims to enhance employability and skill development; however:"],
+    content: [
+      "cyberdude.app aims to enhance employability and skill development; however:",
+    ],
     bullets: [
       "Course completion does not guarantee employment",
       "Recruiter engagement depends on external hiring decisions",
       "We are not responsible for job offers, salary levels, or employment outcomes",
     ],
-    after: "The platform acts as a structured bridge between learners and recruiters but does not guarantee hiring results. To the fullest extent permitted by law, cyberdude.app shall not be liable for indirect or consequential damages, data loss due to user negligence, or service interruptions beyond reasonable control.",
+    after:
+      "The platform acts as a structured bridge between learners and recruiters but does not guarantee hiring results. To the fullest extent permitted by law, cyberdude.app shall not be liable for indirect or consequential damages, data loss due to user negligence, or service interruptions beyond reasonable control.",
   },
   {
     id: "9",
@@ -208,12 +227,15 @@ const TermsContent = [
       "Recruiter visibility",
       "Platform improvement",
     ],
-    after: "is handled according to our Privacy Policy. We implement reasonable security measures to protect user information but cannot guarantee absolute security.",
+    after:
+      "is handled according to our Privacy Policy. We implement reasonable security measures to protect user information but cannot guarantee absolute security.",
   },
   {
     id: "10",
     title: "Termination of Access",
-    content: ["cyberdude.app reserves the right to suspend or terminate accounts, revoke certifications, or restrict recruiter visibility if users:"],
+    content: [
+      "cyberdude.app reserves the right to suspend or terminate accounts, revoke certifications, or restrict recruiter visibility if users:",
+    ],
     bullets: [
       "Violate academic integrity",
       "Misuse monitoring systems",
@@ -231,7 +253,8 @@ const TermsContent = [
       "Analytics models",
       "Platform design",
     ],
-    after: "is the intellectual property of cyberdude.app and may not be copied, redistributed, or reproduced without written permission.",
+    after:
+      "is the intellectual property of cyberdude.app and may not be copied, redistributed, or reproduced without written permission.",
   },
   {
     id: "12",
@@ -241,3 +264,5 @@ const TermsContent = [
     ],
   },
 ];
+
+export default TermsContentData;

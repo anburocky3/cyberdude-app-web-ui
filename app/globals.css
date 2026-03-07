@@ -2,7 +2,6 @@
 
 @import "tailwindcss";
 
-
 @theme {
   --color-orange: hsl(13, 74%, 56%);
   --color-dark-gray: hsl(0, 0%, 8%);
@@ -29,7 +28,6 @@
   }
 }
 
-
 @layer base {
   :root {
     --background: 220 20% 4%;
@@ -47,17 +45,17 @@
       135deg,
       hsl(190 100% 50%),
       hsl(280 100% 60%)
-    ); 
+    );
     --gradient-reward: linear-gradient(
       135deg,
       hsl(150 100% 50%),
       hsl(190 100% 50%)
-    ); 
-     --gradient-premium: linear-gradient(
+    );
+    --gradient-premium: linear-gradient(
       135deg,
       hsl(25 100% 55%),
       hsl(330 100% 60%)
-    ); 
+    );
   }
 
   body {
@@ -71,9 +69,7 @@
   }
 }
 
-
 @layer components {
-
   /* Navigation */
   .desktop-links {
     @apply hidden items-center justify-center md:flex;
@@ -224,7 +220,6 @@
   }
 }
 
-
 @layer utilities {
   .animate-float {
     animation: float 6s ease-in-out infinite;
@@ -240,12 +235,18 @@
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 
   @keyframes pulse-glow {
-    0%, 100% {
+    0%,
+    100% {
       box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
     }
     50% {
@@ -256,8 +257,18 @@
   }
 
   @keyframes gradient-shift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
