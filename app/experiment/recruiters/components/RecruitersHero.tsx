@@ -1,15 +1,11 @@
 import { ArrowRight, Search } from "lucide-react";
 
-<<<<<<< HEAD:app/experiment/recruiters/components/HeroSection.tsx
-const HeroSection = () => {
+const RecruitersHero = () => {
   const pointsData = [
     "Live Learning Data",
     "Behavioral Metrics",
     "Project Evidence",
   ];
-=======
-const RecruitersHero = () => {
->>>>>>> b033247 (fix: recruiters, contact sections improved and global styles fixed):app/experiment/recruiters/components/RecruitersHero.tsx
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 md:px-12 overflow-hidden">
@@ -27,16 +23,15 @@ const RecruitersHero = () => {
           <span className="custom-gradient">Not Assumptions.</span>
         </h1>
 
-        <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto mb-4 leading-relaxed">
+        <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
           Structured access to pre verified, performance backed talent. Move
           beyond resumes and generic portfolios.
         </p>
-        <p className="text-muted-foreground/60 text-sm max-w-md mx-auto mb-12">
+        {/* <p className="text-muted-foreground/60 text-sm max-w-md mx-auto mb-12">
           Live learning data, behavioral metrics, and project evidence in one
           unified ecosystem.
-        </p>
+        </p> */}
 
-<<<<<<< HEAD:app/experiment/recruiters/components/HeroSection.tsx
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-16">
           <button className="group flex items-center gap-2.5 px-8 py-3.5 bg-orange-500 text-primary-foreground font-semibold text-sm rounded-xl glow-orange-500 hover:brightness-110 transition-all duration-300 cursor-pointer">
             Request Talent Access
@@ -47,12 +42,6 @@ const RecruitersHero = () => {
             Explore Skill DNA
           </button>
         </div>
-=======
-                <p className="text-muted-foreground/70 text-base md:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
-                    Structured access to pre verified, performance backed talent.
-                    Move beyond resumes and generic portfolios.
-                </p>
->>>>>>> b033247 (fix: recruiters, contact sections improved and global styles fixed):app/experiment/recruiters/components/RecruitersHero.tsx
 
         <div className="flex items-center justify-center gap-8 text-sm text-muted-foreground">
           {pointsData.map((point, idx) => (
