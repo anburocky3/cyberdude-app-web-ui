@@ -2,7 +2,7 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 const WhyCyberDudeSection = () => {
   return (
-    <section className="py-28 px-6 md:px-12">
+    <section className="py-15 px-6 md:px-12">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-3">
           Build Your <span className="custom-gradient">Verified Pipeline</span>
