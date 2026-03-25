@@ -48,7 +48,7 @@ export default function SiteHeader() {
                   <ul className="absolute left-0 mt-2 border bg-black  shadow-lg rounded-md w-44 py-2 z-30  ">
                     <li>
                       <Link
-                        href="/company#about"
+                        href="/experiment/company/Aboutsection"
                         className="block px-4 py-2 hover:bg-orange-200 hover:text-orange-500 transition"
                       >
                         About
@@ -56,10 +56,10 @@ export default function SiteHeader() {
                     </li>
                     <li>
                       <Link
-                        href="/company#mission"
+                        href="/experiment/company/MissionSection"
                         className="block px-4 py-2 hover:bg-orange-100 hover:text-orange-500 transition"
                       >
-                        Mission &Vision
+                        Mission & Vision
                       </Link>
                     </li>
                     <li>
@@ -154,12 +154,18 @@ export default function SiteHeader() {
                   {menuOpen && (
                     <ul className="pl-4 mt-3 space-y-3">
                       <li>
-                        <Link href="/company#about" onClick={handleNavbar}>
+                        <Link
+                          href="/experiment/company/Aboutsection"
+                          onClick={handleNavbar}
+                        >
                           About
                         </Link>
                       </li>
                       <li>
-                        <Link href="/company#mission" onClick={handleNavbar}>
+                        <Link
+                          href="/experiment/company/MissionSection"
+                          onClick={handleNavbar}
+                        >
                           Mission & Vision
                         </Link>
                       </li>
