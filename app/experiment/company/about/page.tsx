@@ -233,7 +233,7 @@ function AnimatedTimelineNode({
         <div className="flex flex-col justify-center w-full max-w-lg p-6 md:p-8 rounded-3xl border border-border/25 bg-card/5 hover:border-orange-500/40 hover:bg-orange-500/5 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl shadow-orange-500/15 relative overflow-hidden text-left cursor-default">
           <motion.div
             style={{ opacity: pulseOpacity }}
-            className="absolute inset-0 bg-linear-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"
+            className="absolute inset-0 bg-linear-to-br from-orange-500/5] via-transparent to-transparent pointer-events-none"
           />
 
           <div className="flex flex-wrap items-center justify-between mb-5 gap-3 relative z-10 w-full">
