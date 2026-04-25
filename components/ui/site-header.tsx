@@ -50,17 +50,17 @@ export default function SiteHeader() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/experiment/company/impact" className="block px-4 py-2 hover:bg-orange-500 hover:text-black transition">
+                      <Link href="/company/impact" className="block px-4 py-2 hover:bg-orange-500 hover:text-black transition">
                         Impact
                       </Link>
                     </li>
                     <li>
-                      <Link href="/experiment/company/awards" className="block px-4 py-2 hover:bg-orange-500 hover:text-black transition">
+                      <Link href="/company/awards" className="block px-4 py-2 hover:bg-orange-500 hover:text-black transition">
                         Awards
                       </Link>
                     </li>
                     <li>
-                      <Link href="/experiment/company/partner" className="block px-4 py-2 hover:bg-orange-500 hover:text-black transition">
+                      <Link href="/company/partner" className="block px-4 py-2 hover:bg-orange-500 hover:text-black transition">
                         Partner
                       </Link>
                     </li>
