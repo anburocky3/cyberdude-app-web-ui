@@ -3,6 +3,7 @@
 import { Menu, ChevronDown, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function SiteHeader() {
   const [navOpen, setNavOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function SiteHeader() {
 
         <div className="flex gap-3 items-center justify-between">
           {/* desktop navigation links */}
-          <div className="desktop-links">
+          <nav className="desktop-links">
             <ul className="flex flex-col md:flex-row   gap-10 items-start md:items-center justify-center">
               <li className="relative" onClick={toggleCompany}>
                 <div className="hover:text-orange-500  transition-colors duration-300 flex items-center cursor-pointer">
@@ -224,7 +225,7 @@ export default function SiteHeader() {
             ""
           )}
         </div>
-      )}
+      </div>
     </header>
   );
 }
