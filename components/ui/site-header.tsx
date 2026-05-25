@@ -3,7 +3,6 @@
 import { Menu, ChevronDown, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function SiteHeader() {
   const [navOpen, setNavOpen] = useState(false);
@@ -18,7 +17,7 @@ export default function SiteHeader() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <header className="w-full">
+    <header className="w-full relative bg-black text-white">
       <div className="container mx-auto py-5 flex justify-between items-center px-3">
         {/* company logo */}
         <Link href={"/"} className="w-45 h-10">
@@ -46,6 +45,7 @@ export default function SiteHeader() {
                   />
                 </div>
 
+                {/* Company Dropdown Menu */}
                 {menuOpen && (
                   <ul className="absolute left-0 mt-2 border bg-black  shadow-lg rounded-md w-44 py-2 z-30  ">
                     <li>
@@ -80,7 +80,6 @@ export default function SiteHeader() {
                         Awards
                       </Link>
                     </li>
-
                     <li>
                       <Link
                         href="/company/partner"
@@ -117,7 +116,7 @@ export default function SiteHeader() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
           {/* get started button */}
           <Link
@@ -225,7 +224,7 @@ export default function SiteHeader() {
             ""
           )}
         </div>
-      </div>
+      )}
     </header>
   );
 }
