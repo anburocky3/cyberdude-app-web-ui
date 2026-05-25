@@ -20,7 +20,7 @@ import {
   Flame,
   ScanFace,
   BarChart3,
-  Compass
+  Compass,
 } from "lucide-react";
 
 const AboutSectionData = {
@@ -34,8 +34,10 @@ const AboutSectionData = {
 
   /* ── Mission & Vision ───────────────────────────────── */
   missionVision: {
-    mission: "To bridge the gap between passive online learning and professional competence by creating an accountable, evidence-based ecosystem. We don't just provide content; we enforce the discipline and rigor required to transform beginners into job-ready professionals through \"Natural Intelligence\" and strict, proctored engagement.",
-    vision: "To become the global standard for verified skill acquisition, where a \"CyberDude\" certification isn't just a digital image, but a data-rich proof of grit, logic, and practical mastery that recruiters trust implicitly."
+    mission:
+      'To bridge the gap between passive online learning and professional competence by creating an accountable, evidence-based ecosystem. We don\'t just provide content; we enforce the discipline and rigor required to transform beginners into job-ready professionals through "Natural Intelligence" and strict, proctored engagement.',
+    vision:
+      'To become the global standard for verified skill acquisition, where a "CyberDude" certification isn\'t just a digital image, but a data-rich proof of grit, logic, and practical mastery that recruiters trust implicitly.',
   },
 
   /* ── Problem we solve ───────────────────────────────── */
@@ -51,7 +53,7 @@ const AboutSectionData = {
     {
       icon: BookX,
       badge: "The Skill Gap",
-      title: "Moving beyond \"watching videos\" to \"solving problems\".",
+      title: 'Moving beyond "watching videos" to "solving problems".',
       desc: "Passively scrolling through videos doesn't build skills. Our attention-verified, project-based curriculum ensures every minute equals measurable competence.",
       stat: "72%",
       statLabel: "of graduates lack job-ready skills",
@@ -59,10 +61,10 @@ const AboutSectionData = {
     {
       icon: ShieldAlert,
       badge: "The Trust Deficit",
-      title: "Replacing inflated resumes with verified \"Skill DNA\".",
+      title: 'Replacing inflated resumes with verified "Skill DNA".',
       desc: "Employers can't trust self-reported skills. We replace inflated résumés with verified Skill DNA — provable grit, logic scores, and live project portfolios.",
       stat: "60%",
-      statLabel: "of hirers distrust résumé claims",
+      statLabel: "of hirers distrust resume claims",
     },
   ],
 
@@ -72,14 +74,14 @@ const AboutSectionData = {
       icon: Lock,
       number: "01",
       title: "Strict Accountability",
-      desc: "Sequential modules and AI-based proctoring ensure you don't just \"skip to the end\". Every unlock is earned.",
+      desc: 'Sequential modules and AI-based proctoring ensure you don\'t just "skip to the end". Every unlock is earned.',
       tag: "Anti-passive",
     },
     {
       icon: ScanFace,
       number: "02",
       title: "Attention-First Learning",
-      desc: "Integrated \"Are you still there?\" checks and interactive quizzes that pause content until you prove focus.",
+      desc: 'Integrated "Are you still there?" checks and interactive quizzes that pause content until you prove focus.',
       tag: "AI Proctoring",
     },
     {
@@ -218,7 +220,7 @@ const AboutSectionData = {
       persona: "Working Professionals",
       problem: "Limited time and a need for high-ROI upskilling.",
       solution:
-        "A \"no-fluff\" environment that guarantees every minute results in verified, industry-respected credentials.",
+        'A "no-fluff" environment that guarantees every minute results in verified, industry-respected credentials.',
     },
     {
       icon: BookOpen,
@@ -232,7 +234,7 @@ const AboutSectionData = {
       persona: "Institutions",
       problem: "Outdated curricula and low student placement rates.",
       solution:
-        "Acts as a \"Finishing School\" module, bridging the gap between academia and industry.",
+        'Acts as a "Finishing School" module, bridging the gap between academia and industry.',
     },
     {
       icon: Users,

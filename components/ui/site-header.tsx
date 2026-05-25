@@ -3,11 +3,13 @@
 import { Menu, ChevronDown, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function SiteHeader() {
   const [navOpen, setNavOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const pathname = usePathname();
   const handleNavbar = () => {
     setNavOpen(!navOpen);
   };
